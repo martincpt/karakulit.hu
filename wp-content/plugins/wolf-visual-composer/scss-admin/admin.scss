@@ -1,0 +1,16 @@
+$admin_accent : #0073AA;
+@import "../scss/var";
+@import "parts/helpers";
+
+@import "parts/vc-panel";
+@import "parts/vc_elements-icons";
+//@import "parts/elements-icons";
+@import "parts/params";
+@import "parts/mce";
+@import "parts/debug";
+@import "parts/jquery-ui-slider";
+@import "../scss/shortcodes/button";
+
+.vc_license-activation-notice{
+	display: none!important;
+}

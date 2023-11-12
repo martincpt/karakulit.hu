@@ -1,0 +1,38 @@
+.wvc-cards-gallery{
+	width: 100%;
+	position: relative;
+
+	.wvc-card-item{
+		position: absolute;
+		will-change: transform;
+		transition: all .15s ease;
+	}
+}
+
+.wvc-cg-alignment-left{
+	.wvc-card-item{
+		left: 0;
+
+		&:nth-last-child(2){
+			transform: scale(.8) translateX(30%);
+		}
+	}
+}
+
+.wvc-cg-alignment-right{
+	.wvc-card-item{
+		right: 0;
+
+		&:nth-last-child(2){
+			transform: scale(.8) translateX(-30%);
+		}
+	}
+}
+
+.wvc-fake-card{
+	position: relative;
+	display: block;
+	opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
+}

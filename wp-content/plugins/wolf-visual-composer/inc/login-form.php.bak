@@ -1,0 +1,105 @@
+<?php
+/**
+ * %NAME% login form function
+ *
+ * @author WolfThemes
+ * @category Core
+ * @package %PACKAGENAME%/Core
+ * @version %VERSION%
+ */
+
+defined( 'ABSPATH' ) || exit;
+
+/**
+ * Returns a login form
+ *
+ * @param array $atts
+ */
+function wvc_login_form( $atts = array() ) {
+	$atts = wp_parse_args( $atts, array(
+		'css_animation' => '',
+		'css_animation_delay' => '',
+		'css' => '',
+		'el_class' => '',
+		'inline_style' => '',
+	) );
+
+	$atts = apply_filters( 'wvc_login_form_atts', $atts );
+
+	extract( $atts );
+
+	$output = '';
+
+	wp_enqueue_script( 'jquery-ui-tabs', true );
+	wp_enqueue_script( 'wvc-loginform' );
+
+	$class = $el_class;
+	$inline_style = wvc_sanitize_css_field( $inline_style );
+	$inline_style .= wvc_shortcode_custom_style( $css );
+
+	/*Animate */
+	if ( ! wvc_is_new_animation( $css_animation ) ) {
+		$class .= wvc_get_css_animation( $css_animation );
+		$inline_style .= wvc_get_css_animation_delay( $css_animation_delay );
+	}
+
+	$class .= " wvc-login-form wvc-login-form-container";
+
+	$output .= '<div class="' . wvc_sanitize_html_classes( $class ) . '" style="' . wvc_esc_style_attr( $inline_style ) . '"';
+
+	$output .= wvc_element_aos_animation_data_attr( $atts );
+
+	$output .= '>';
+	
+	$output .= '<div class="wvc-login-form-inner">';
+
+	/* Title */
+	$output .= '<div class="wvc-login-form-title-container">';
+	$output .= '<h3 class="wvc-login-form-title">';
+	$output .= esc_html__( 'Login', '%TEXTDOMAIN%' );
+	$output .= '</h3>';
+	$output .= '</div>';
+
+	$args = array( 
+		//'redirect' =>  wolf_helpdesk_get_page_link( 'user-tickets' ),
+		'form_id' => uniqid( 'wvc-login-form-' ),
+		'label_username' => esc_html__( 'Username', '%TEXTDOMAIN%' ),
+		'label_log_in' => esc_html__( 'Sign In', '%TEXTDOMAIN%' ),
+	);
+
+	ob_start();
+	wp_login_form( $args );
+	$output .= ob_get_clean();
+
+	$output .= '<p class="wvc-login-form-links">';
+
+	if ( class_exists( 'WooCommerce' ) && function_exists( 'wc_get_page_id' ) ) {
+		
+		$output .= '<a href="' . esc_url( get_permalink( wc_get_page_id( 'myaccount' ) ) ) . '">';
+
+	} else {
+		$output .= '<a href="' . esc_url( wp_registration_url() ) . '">';
+	}
+
+		$output .= esc_html__( 'I need to register', '%TEXTDOMAIN%' );
+		$output .= '</a>';
+
+	if ( class_exists( 'WooCommerce' ) && function_exists( 'wc_lostpassword_url' ) ) {
+		
+		$output .= ' ' . apply_filters( 'wvc_login_form_bottom_link_separator', '|' ) . ' ';
+
+		$output .= '<a href="' . esc_url( wc_lostpassword_url() ) . '">';
+		$output .= esc_html__( 'Forgot your password?', '%TEXTDOMAIN%' );
+		$output .= '</a>';
+
+		$output .= '</p>';
+	}
+
+	$output .= '</p>';
+
+	$output .= '</div><!--.wvc-login-form-inner-->';
+
+	$output .= '</div><!--.wvc-login-form-->';
+
+	return $output;
+}

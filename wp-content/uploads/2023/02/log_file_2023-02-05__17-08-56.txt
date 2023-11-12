@@ -1,0 +1,134 @@
+
+---Downloaded files---
+The import files for: All Demo Pages were successfully downloaded!
+Initial max execution time = 60
+Files info:
+Site URL = https://karakulit.hu
+Data file = /home/martintr/karakulit.hu/wp-content/uploads/2023/02/demo-content-import-file_2023-02-05__17-08-56.xml
+Widget file = /home/martintr/karakulit.hu/wp-content/uploads/2023/02/demo-widgets-import-file_2023-02-05__17-08-56.json
+Customizer file = /home/martintr/karakulit.hu/wp-content/uploads/2023/02/demo-customizer-import-file_2023-02-05__17-08-56.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Blog Sidebar : 
+
+Keresés - No Title - Imported
+Products list - Products - Imported
+Legutóbbi bejegyzések - No Title - Imported
+Kategóriák - No Title - Imported
+Címkefelhő - No Title - Imported
+
+Page Sidebar : 
+
+Egyéni HTML - No Title - Imported
+Products list - New Merch - Imported
+
+Side Panel Sidebar : 
+
+Egyéni HTML - No Title - Imported
+Legutóbbi bejegyzések - No Title - Imported
+
+Discography Sidebar : 
+
+Products list - Products - Imported
+Event list - Upcoming Gigs - Imported
+Legutóbbi bejegyzések - Latest News - Imported
+
+Videos Sidebar : 
+
+Products list - Last Products - Imported
+
+Events Sidebar : 
+
+Products list - New Products - Imported
+
+Shop Sidebar : 
+
+Product Search - No Title - Imported
+Products list - New Merch - Imported
+Product Categories - No Title - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+

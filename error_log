@@ -1,0 +1,4 @@
+[11-Mar-2023 10:56:18 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: invalid_schedule, Error message: Esemény ütemezés nem létezik., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[13-Mar-2023 07:01:54 UTC] Cron reschedule event error for hook: sb_instagram_feed_issue_email, Error code: invalid_schedule, Error message: Esemény ütemezés nem létezik., Data: {"schedule":"sbiweekly","args":[],"interval":604800}
+[13-Mar-2023 07:01:54 UTC] Cron reschedule event error for hook: sbi_notification_update, Error code: invalid_schedule, Error message: Esemény ütemezés nem létezik., Data: {"schedule":"sbiweekly","args":[],"interval":604800}
+[22-Mar-2023 16:49:10 UTC] Cron reschedule event error for hook: woocommerce_geoip_updater, Error code: invalid_schedule, Error message: Esemény ütemezés nem létezik., Data: {"schedule":"fifteendays","args":[],"interval":1296000}

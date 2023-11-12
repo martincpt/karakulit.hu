@@ -1,0 +1,97 @@
+.wvc-bmic-container{
+
+}
+
+.wvc-bmic-table{
+	
+}
+
+.wvc-bmic-form{
+
+}
+
+.wvc-bmic-legend{
+
+}
+
+.wvc-bmic-legend-bold{
+	font-weight: 700;
+}
+
+.wwvc-bmic-subtitle > p,
+.wvc-bmic-title{
+	margin-bottom: 20px;
+}
+
+.wvc-bmic-result{
+	background:white;
+	color:#666;
+	border:1px solid rgba(0,0,0,0.05);
+	margin-top: 50px;
+	padding: 44px;
+	position: relative;
+
+	strong{
+		color:black!important;
+	}
+}
+
+.wvc-bmic-result-inner{
+	
+}
+
+.wvc-bmic-result-close{
+	cursor: pointer;
+	position: absolute;
+	right: 15px;
+	top: 40px;
+}
+
+.wvc-bmic-result{
+	height: 0;
+	opacity: 0;
+	transition:all .2s ease;
+}
+
+.wvc-bmic-notification-show{
+	height: auto;
+	opacity: 1;
+}
+
+.wvc-bmic-loading{
+	.wvc-hellip{
+		animation-name: wvc_hellip_flash;
+		animation-duration: 1.4s;
+		animation-iteration-count: infinite;
+		animation-fill-mode: both;
+		
+		&:nth-child(1){
+		}
+
+		&:nth-child(2){
+			animation-delay: .2s;
+		}
+
+		&:nth-child(3){
+			animation-delay: .4s;
+		}
+	}
+}
+
+.wvc-bmic-result p{
+	margin-bottom: 20px;
+}
+
+.wvc-bmic-result p:last-of-type{
+	margin-bottom: 0;
+}
+
+@keyframes wvc_hellip_flash {
+	0% { opacity: .2; } 
+	20% { opacity: 1; } 
+	100% { opacity: .2; }
+}
+
+@media screen and (min-width: 800px) {
+	
+}

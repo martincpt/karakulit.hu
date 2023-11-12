@@ -1,0 +1,35 @@
+.wvc-section-slideshow-background{
+	background:#333;
+	display: block;
+	z-index: -1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left: 0;
+	overflow: hidden;
+
+	.flex-viewport{
+		height: 100%; // force full height on mobile
+	}
+
+	.slides{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	.slides li{
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-position: center center;
+		background-repeat: no-repeat;
+		-webkit-background-size: 100%;
+		     -o-background-size: 100%;
+		        background-size: 100%;
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+	}
+}

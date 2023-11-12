@@ -1,0 +1,47 @@
+.wvc-counter-icon-container{
+	width: 100%;
+	display: block;
+	text-align: center;
+	margin-bottom: 15px;
+	//color: #333;
+}
+
+.wvc-counter,
+.wvc-counter-text{
+	display: block;
+	text-align: center;
+	//color: #333;
+}
+
+.wvc-ct-text-align-left{
+	text-align: left;
+	.wvc-counter,
+	.wvc-counter-text{
+		text-align: left;
+	}
+}
+
+.wvc-ct-text-align-center{
+	text-align: center;
+	.wvc-counter,
+	.wvc-counter-text{
+		text-align: center;
+	}
+}
+
+.wvc-ct-text-align-right{
+	text-align: right;
+	.wvc-counter,
+	.wvc-counter-text{
+		text-align: right;
+	}
+}
+
+.wvc-counter{
+	line-height: 1.5;
+	font-size: 32px;
+}
+
+.wvc-counter-text{
+	font-size: 14px;
+}

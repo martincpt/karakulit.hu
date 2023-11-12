@@ -1,0 +1,67 @@
+.wvc-countdown-container{
+	//margin: 30px auto;
+	transition:opacity .5s linear .3s;
+	opacity: 0;
+	font-size: 28px; // default number font
+
+	&.wvc-countdown-has-color{
+		.wvc-countdown{
+			color:inherit;
+		}
+	}
+
+	.wvc-countdown-text-has-color{
+		.countdown-period{
+			color:inherit;
+		}
+	}
+
+	.countdown-rtl {
+		direction: rtl;
+	}
+
+	.countdown-row{
+		display: flex;
+		justify-content: space-between;
+		justify-content: space-around;
+		text-align: center;
+		align-items: center;
+
+		width: 100%;
+	}
+
+	.countdown-section {
+		list-style-type: none;
+		flex: 1;
+		//float: left;
+		//width: 25%;
+	}
+
+	.countdown-amount {
+		//font-size: 24px;
+		position: relative;
+	}
+
+	.countdown-period {
+		display: block;
+		font-size: 15px!important;
+	}
+
+	.countdown-descr {
+		display: block;
+		width: 100%;
+	}
+}
+
+.wvc-countdown{
+	margin-bottom: 28px; // balance unknown top padding
+	@extend .wvc-clearfix;
+}
+
+.wvc-loaded .wvc-countdown-container{
+	opacity: 1;
+}
+
+.wvc-countdown-container-loaded{
+	opacity: 1;
+}

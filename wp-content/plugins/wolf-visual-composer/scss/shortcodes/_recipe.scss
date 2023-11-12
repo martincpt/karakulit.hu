@@ -1,0 +1,172 @@
+.wvc-recipe{
+	width: 100%;
+	border:1px solid rgba(0,0,0,0.05);
+	padding: 44px;
+
+	ul,ol{
+		    padding-left: 20px;
+	}
+
+	.wvc-recipe-title-container,
+	.wvc-recipe-subtitle-container{
+		max-width: 650px;
+	}
+
+	.wvc-recipe-counter{
+		position: relative;
+	}
+
+	.wvc-recipe-meta{
+		position: relative;
+		//transform:scale(.7);
+	}
+
+	.wvc-recipe-counter-circle{
+		width: 80px;
+		height: 80px;
+		background:#333;
+		color:white;
+		border-radius: 999em;
+		display: block;
+		position: relative;
+	}
+	
+	.wvc-counter-container {
+		margin: 0 auto;
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform:translate3d(-50%,-50%,0);
+	}
+
+	.wvc-counter{
+		color:white!important;
+		font-size: 16px!important;
+	}
+
+	.wvc-counter-text{
+		font-size: 10px;
+	}
+}
+
+.wvc-recipe-head{
+	position: relative;
+	margin-bottom: 35px;
+}
+
+.wvc-recipe-title{
+	font-size: 1.6em;
+	margin-bottom: 0;
+}
+
+.wvc-recipe-details{
+	margin-top: 35px;
+	max-width: 800px;
+	width: 100%;
+	display: flex;
+	//align-content: space-between;
+	justify-content: space-between;
+}
+
+.wvc-recipe-meta{
+	display: block;
+	margin-bottom: 20px;
+}
+
+.wvc-recipe-total-time-title,
+.wvc-recipe-servings-title{
+	display: block;
+	font-size: 16px;
+	font-weight: 700;
+	//margin-bottom: 10px;
+}
+
+.wvc-recipe-total-time,
+.wvc-recipe-servings{
+	
+}
+
+.wvc-recipe-print-button{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.wvc-recipe-description-container{
+	margin-bottom: 35px;
+	max-width: 800px;
+	font-weight: 700;
+	font-size: 1.1em;
+}
+
+.wvc-recipe-instructions{
+	ol{
+		list-style-type:decimal;
+	}
+}
+
+.wvc-is-mobile{
+	.wvc-recipe-print-button{
+		display: none;
+	}
+}
+
+.wvc-recipe-image{
+	margin-top: 35px;
+	margin-bottom: 35px;
+
+	img{
+		max-width: 800px;
+		width: 100%;
+	}
+}
+
+.wvc-recipe{
+
+	&.wvc-el-800{
+		.wvc-recipe-print-button{
+			display: none;
+		}
+	}
+
+	//&.wvc-el-800,
+	&.wvc-el-500,
+	&.wvc-el-380{
+
+		
+
+		.wvc-recipe-meta{
+			display: block;
+			float: left;
+			width: 50%;
+			text-align: center;
+			margin: 0 auto 20px;
+		}
+
+		.wvc-recipe-counter-circle{
+			margin: 0 auto;
+		}
+
+		.wvc-recipe-details{
+			display: block;
+		}
+
+		.wvc-recipe-counter-circle{
+			//width: 80px;
+			//height: 80px;
+		}
+
+		.wvc-counter{
+			//font-size: 16px!important;
+		}
+
+		.wvc-counter-text{
+			//font-size: 10px;
+		}
+
+		.wvc-recipe-total-time, .wvc-recipe-servings{
+			display: block;
+		}
+	}
+}

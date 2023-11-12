@@ -1,0 +1,82 @@
+.wvc-block{
+	z-index: 0;
+	position: relative;
+	overflow: hidden;
+	
+	p:empty{
+		margin-top: 0!important;
+		margin-bottom: 0!important;
+	}
+
+	min-height: 1px; // fill empty column
+
+	img,
+	iframe, 
+	embed, 
+	object, 
+	video{
+		max-width: 100%;
+	}
+
+	.wvc-video-bg{
+		max-width: none;
+	}
+}
+
+.wvc-block-transparent-bg{
+	background: none!important;
+}
+
+.wvc-block-content{
+	position: relative;
+	z-index: 5;
+	width: 100%;
+}
+
+.wvc-block-text{
+
+	.wvc-block-content{
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 80%;
+	}
+
+	.wvc-block-inner{
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 600px;
+	}
+}
+
+.wvc-block-text  .wvc-block-inner{
+	padding: 4em 0;
+}
+
+.wvc-block-media{
+	img,
+	iframe, 
+	embed, 
+	object, 
+	video{
+		width: 100%;
+		margin: 0!important;
+	}
+
+	.fluid-video,
+	.wvc-fluid-video,
+	.wolf-jplayer-playlist,
+	.wpm-playlist,
+	.gist .gist-file,
+	.wvc-youtube-container{
+		margin-bottom: 0!important;
+	}
+}
+
+.wvc-block-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}

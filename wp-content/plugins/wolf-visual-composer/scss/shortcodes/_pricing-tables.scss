@@ -1,0 +1,157 @@
+.wvc-pricing-tables{
+	margin: 50px auto;
+}
+
+.wvc-pricing-table-inner{
+	margin: 0 auto 10px;
+	position: relative;
+	z-index: 10;
+	width: 100%;
+	max-width: 450px;
+	padding: 0.5em;
+
+	p{
+		margin: 0 0 0 0;
+		height: 0;
+		line-height: 0;
+	}
+	ul{
+		padding: 0!important;
+		margin: 0!important;
+
+		li{
+			width: 100%;
+			position: relative;
+			list-style-type: none!important;
+			font-size: 15px;
+			background: #fff;
+			color: #333;
+			padding: 30px 25px;
+			text-align: center;
+
+			&:nth-child(odd){
+				background: darken( #fff, 1%);
+			}
+
+			&.wvc-pricing-table-title-cell{
+				vertical-align: middle;
+				background: #898989;
+				color: #FFF;
+
+				.wvc-pricing-table-title{
+					font-size: 20px;
+					margin-bottom: 0;
+					margin-top: 0;
+					line-height: 1;
+					color: #FFF!important;
+				}
+			}
+		}
+	}
+}
+
+.wvc-pricing-table-button{
+	padding: 0!important;
+	a{
+		display: block;
+		background: darken(#ccc, 10%);
+		color: #fff!important;
+		padding: 30px;
+		font-size: 17px;
+		font-weight: 900;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		transition: all .05s linear;
+
+		&:hover{
+			transform:scale(1.05);
+			background: #333;
+		}
+	}
+}
+
+.wvc-pricing-table-tagline{
+	font-size: 13px;
+	display:block;
+	padding:0 10px;
+	margin-top:10px;
+	line-height:1.1;
+}
+
+.wvc-pricing-table-featured{
+	position: relative;
+	z-index: 99;
+	//margin-top: 45px;
+}
+
+.wvc-pricing-table-featured-text{
+	position: absolute;
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	color: #FFF;
+	font-weight: 700;
+	font-size: 14px;
+	text-align: center;
+	left: 0;
+	top: -35px;
+
+	span{
+		text-align: center;
+	}
+}
+
+.wvc-pricing-table-price{
+	font-size: 64px;
+	font-weight: 700;
+}
+
+.wvc-pricing-table-currency{
+	font-size: 32px;
+	position: relative;
+	top: -3px;
+}
+
+.wvc-pricing-table-price-period{
+	display: block;
+	font-size: 18px;
+	margin-top: -15px;
+}
+
+.wvc-pricing-table-price-strike{
+	font-weight: 700;
+	margin-right: 10px;
+	position: relative;
+	font-size: 16px;
+
+	&:before{
+		content:' ';
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform:rotate(30deg);
+		height: 4px;
+		width: 100%;
+		opacity: 0.8;
+		margin-top: -2px;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.wvc-pricing-table-featured{
+		margin-top: 15px;
+	}
+}
+
+$pricing_table_accent : #333;
+.wvc-pricing-table-featured-text,
+.wvc-pricing-table-price-strike:before,
+.wvc-pricing-table-button a{
+	background: $pricing_table_accent;
+}
+
+.wvc-pricing-table-price,
+.wvc-pricing-table-currency{
+	color: $pricing_table_accent;
+}
+

@@ -1,0 +1,94 @@
+.wvc-accordion{
+	.ui-state-focus{
+		outline: none;
+	}
+
+	.ui-accordion-content{
+		padding: 1em 1.5em;
+
+		p{
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+
+		.wpb_content_element{
+			margin-bottom: 0;
+		}
+	}
+}
+
+.wvc-accordion-tab{
+	margin: 0;
+	padding: 8px 15px;
+	cursor: pointer;
+	a{
+		display: block;
+	}
+}
+
+.wvc-at-icon-container{
+	//margin-right: 35px;
+	//position: relative;
+	//display: inline-block;
+
+	.fa{
+		//top: 50%;
+		//left: 0;
+		//position: absolute;
+		//transform: translateY(-50%);
+	}
+}
+
+.wvc-at-has-icon{
+
+	.wvc-at-title-container{
+		display: table;
+		width: 100%;
+		height: 100%;
+	}
+
+	.wvc-at-icon-container,
+	.wvc-accordion-title-text{
+		display: table-cell;
+		height: 100%;
+		vertical-align: middle;
+	}
+
+	.wvc-at-icon-container{
+		width: 35px;
+	}
+}
+
+.wvc-font-dark{
+	.wvc-accordion{
+		.ui-accordion-content{
+			background: #fff;
+			box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2);
+		}
+	}
+
+	.wvc-accordion-tab{
+		background: #FFF;
+		border-bottom : solid 1px rgba(0, 0, 0, 0.05);
+		a{
+			color: #0d0d0d!important;
+		}
+	}
+}
+
+.wvc-font-light{
+	.wvc-accordion{
+		.ui-accordion-content{
+			background: #333333 ;
+			box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2);
+		}
+	}
+
+	.wvc-accordion-tab{
+		background: #333333 ;
+		border-bottom : solid 1px rgba(0, 0, 0, 0.2);
+		a{
+			color: #fff!important;
+		}
+	}
+}

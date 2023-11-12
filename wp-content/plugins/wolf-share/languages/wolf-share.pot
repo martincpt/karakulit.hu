@@ -1,0 +1,216 @@
+# Copyright (C) 2021 WolfThemes
+# This file is distributed under the same license as the Share Icons package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Share Icons 1.1.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wolf-share\n"
+"POT-Creation-Date: 2021-07-22 14:01:49+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2021-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/basic-theme/exclude/file.php:3
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/plugin-include/plugin-include.php:6
+msgid "Exclude"
+msgstr ""
+
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/plugin-include/include/file.php:2
+msgid "Include"
+msgstr ""
+
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/add-domain.php:2
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:2
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:3
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:4
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-domains.php:2
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-domains.php:3
+msgid "String"
+msgstr ""
+
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:9
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:10
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:11
+msgid "1 Star"
+msgid_plural "%s Stars"
+msgstr[0] ""
+msgstr[1] ""
+
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/translator-comments/translator-comments.php:7
+#. translators: A single line translators comment.
+msgid "A"
+msgstr ""
+
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/translator-comments/translator-comments.php:15
+#. translators: A multiline translators comment.
+msgid "B"
+msgstr ""
+
+#: inc/admin/class-ws-admin.php:54
+#: pack/wolf-share/inc/admin/class-ws-admin.php:54
+msgid "Settings"
+msgstr ""
+
+#: inc/admin/class-ws-options.php:47
+#: pack/wolf-share/inc/admin/class-ws-options.php:47
+msgid "Share Buttons"
+msgstr ""
+
+#: inc/admin/class-ws-options.php:56
+#: pack/wolf-share/inc/admin/class-ws-options.php:56
+msgid "Post Types"
+msgstr ""
+
+#: inc/admin/class-ws-options.php:57
+#: pack/wolf-share/inc/admin/class-ws-options.php:57
+msgid "Services"
+msgstr ""
+
+#: inc/admin/class-ws-options.php:130
+#: pack/wolf-share/inc/admin/class-ws-options.php:130
+msgid "Share Button Options"
+msgstr ""
+
+#: inc/admin/class-ws-options.php:133
+#: pack/wolf-share/inc/admin/class-ws-options.php:133
+msgid "Settings saved."
+msgstr ""
+
+#: inc/admin/class-ws-options.php:139
+#: pack/wolf-share/inc/admin/class-ws-options.php:139
+msgid "Save Changes"
+msgstr ""
+
+#: inc/admin/updater.php:434 pack/wolf-share/inc/admin/updater.php:434
+msgid ""
+"The plugin has been updated, but could not be reactivated. Please "
+"reactivate it manually."
+msgstr ""
+
+#: inc/admin/updater.php:435 pack/wolf-share/inc/admin/updater.php:435
+msgid "Plugin reactivated successfully."
+msgstr ""
+
+#: pack/share.php:23 pack/share.php:34
+#: pack/wolf-share/templates/share-buttons.php:26
+#: pack/wolf-share/templates/share-buttons.php:40
+#: pack/wolf-share/templates/share-buttons.php:54
+#: pack/wolf-share/templates/share-buttons.php:70
+#: pack/wolf-share/templates/share-buttons.php:84
+#: pack/wolf-share/templates/share-buttons.php:99
+#: pack/wolf-share/templates/share-buttons.php:113
+#: pack/wolf-share/templates/share-buttons.php:129
+#: pack/wolf-share/templates/share-buttons.php:145
+#: pack/wolf-share/templates/share-buttons.php:161
+#: templates/share-buttons.php:26 templates/share-buttons.php:40
+#: templates/share-buttons.php:54 templates/share-buttons.php:70
+#: templates/share-buttons.php:84 templates/share-buttons.php:99
+#: templates/share-buttons.php:113 templates/share-buttons.php:129
+#: templates/share-buttons.php:145 templates/share-buttons.php:161
+msgid "Share on %s"
+msgstr ""
+
+#: pack/share.php:25 pack/wolf-share/templates/share-buttons.php:28
+#: templates/share-buttons.php:28
+msgid "Facebook"
+msgstr ""
+
+#: pack/share.php:36 pack/wolf-share/templates/share-buttons.php:42
+#: templates/share-buttons.php:42
+msgid "Twitter"
+msgstr ""
+
+#: pack/share.php:45 pack/wolf-share/templates/share-buttons.php:175
+#: templates/share-buttons.php:175
+msgid "Share by %s"
+msgstr ""
+
+#: pack/share.php:47
+msgid "Email"
+msgstr ""
+
+#: pack/wolf-share/templates/share-buttons.php:13
+#: templates/share-buttons.php:13
+msgid "Shared %s times"
+msgstr ""
+
+#: pack/wolf-share/templates/share-buttons.php:56
+#: templates/share-buttons.php:56
+msgid "Reddit"
+msgstr ""
+
+#: pack/wolf-share/templates/share-buttons.php:72
+#: templates/share-buttons.php:72
+msgid "Pinterest"
+msgstr ""
+
+#: pack/wolf-share/templates/share-buttons.php:86
+#: templates/share-buttons.php:86
+msgid "Tumblr"
+msgstr ""
+
+#: pack/wolf-share/templates/share-buttons.php:101
+#: templates/share-buttons.php:101
+msgid "Google Plus"
+msgstr ""
+
+#: pack/wolf-share/templates/share-buttons.php:115
+#: templates/share-buttons.php:115
+msgid "LinkedIn"
+msgstr ""
+
+#: pack/wolf-share/templates/share-buttons.php:131
+#: templates/share-buttons.php:131
+msgid "StumbleUpon"
+msgstr ""
+
+#: pack/wolf-share/templates/share-buttons.php:147
+#: templates/share-buttons.php:147
+msgid "VKontakte"
+msgstr ""
+
+#: pack/wolf-share/templates/share-buttons.php:163
+#: templates/share-buttons.php:163
+msgid "Xing"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Share Icons"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://wlfthm.es/wolf-share"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A WordPress plugin to add share buttons to your post."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "WolfThemes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://wolfthemes.com"
+msgstr ""
+
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:6
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:7
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:8
+msgctxt "a string"
+msgid "String"
+msgstr ""

@@ -1,0 +1,14 @@
+{
+	"version": "1.5.1",
+	"updated": "2020-08-26",
+	"slug": "wolf-discography",
+	"name": "Discography",
+	"packagename": "WolfDiscography",
+	"created": "2013-11-19",
+	"createdNice": "19th november 2013",
+	"description": "A discography plugin to display your releases.",
+	"link": "https://github.com/wolfthemes/wolf-discography/",
+	"shortlink": "http://wlfthm.es/wolf-discography",
+	"author": "WolfThemes",
+	"authorURI": "https://wolfthemes.com"
+}

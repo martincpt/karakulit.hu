@@ -1,0 +1,268 @@
+.wvc-album-tracklist {
+}
+
+ol.wvc-album-tracklist-list {
+	padding: 0 !important;
+	margin: 0 !important;
+	border: none !important;
+	list-style-type: none;
+}
+
+li.wvc-album-tracklist-item {
+	//	list-style-type: none;
+	list-style-type: none !important;
+}
+
+.wvc-album-tracklist-ordered {
+	ol.wvc-album-tracklist-list {
+		counter-reset: item;
+	}
+
+	li.wvc-album-tracklist-item {
+		counter-increment: step-counter;
+		.wvc-ati-title:before {
+			content: counter(step-counter) '.';
+			margin-right: 8px;
+		}
+	}
+}
+
+li.wvc-album-tracklist-item {
+	position: relative;
+	line-height: 1.4;
+	padding: 18px 0;
+	border-bottom: 1px solid #f4f4f4;
+	font-size: 16px;
+}
+
+.wvc-ati-table {
+	//position: absolute;
+	//top: 50%;
+	//transform:translate3d(0,-50%,0);
+	//left: 5px;
+
+	//margin-top: -1px;
+
+	//justify-content: space-between;
+	width: 100%;
+	display: table;
+}
+
+.wvc-ati-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+$action_w: 132px;
+$cell: 44px;
+
+.wvc-ati-title-cell {
+	font-weight: 700;
+	width: calc(100% - #{$action_w + $cell * 3});
+	font-size: 15px;
+}
+
+.wvc-ati-duration-cell {
+	text-align: left;
+	//width: 150px;
+	font-weight: 400;
+	opacity: 0.88;
+	font-size: 12px;
+	width: $cell;
+}
+
+.wvc-ati-audio-cell {
+	text-align: center;
+	width: $cell;
+}
+
+.wvc-ati-play,
+.wvc-ati-pause {
+	transition: opacity 0.2s ease;
+	opacity: 0;
+}
+
+.wvc-ati-play {
+	opacity: 1;
+}
+
+.wvc-ati-play-button {
+	position: relative;
+	width: 22px;
+	height: 22px;
+	//top: 3px;
+	&.wvc-ati-track-playing {
+		.wvc-ati-play {
+			opacity: 0;
+		}
+
+		.wvc-ati-pause {
+			opacity: 1;
+		}
+	}
+}
+
+.wvc-ati-video-cell {
+	text-align: left;
+	width: $cell;
+}
+
+.wvc-ati-action-cell {
+	width: $action_w;
+	text-align: right;
+	font-weight: 400;
+	font-size: 18px;
+
+	.added_to_cart {
+		display: none;
+	}
+}
+
+.wvc-ati-price {
+	font-size: 13px;
+	padding-right: 8px;
+}
+
+.wvc-ati-add-to-cart-button {
+	position: relative;
+}
+
+.wvc-ati-add-to-cart-button-title {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 5;
+}
+
+.wvc-ati-add-to-cart {
+	position: relative;
+	z-index: 0;
+}
+
+.wvc-ati-add-to-cart-button.loading .wvc-ati-add-to-cart:before {
+	opacity: 0.66;
+}
+
+.wvc-ati-add-to-cart-button.added .wvc-ati-add-to-cart:before {
+	animation: wvc_ati_pop 0.3s linear 1;
+}
+
+// Add to cart pop animation
+@keyframes wvc_ati_pop {
+	50% {
+		transform: scale(1.8);
+	}
+}
+
+.wvc-ati-play-button {
+	display: block;
+	position: relative;
+	width: 30px;
+
+	.wvc-ati-icon {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate3d(-50%, 0, 0);
+	}
+}
+
+.wvc-ati-link {
+	cursor: pointer;
+}
+
+.wvc-ati-icon:before {
+	position: relative;
+	margin: 0 8px;
+	@include icon();
+	font-family: FontAwesome;
+}
+
+.wvc-ati-play:before {
+	content: '\f04b';
+}
+
+.wvc-ati-pause:before {
+	content: '\f04c';
+}
+
+.wvc-ati-video:before {
+	content: '\f03d';
+}
+
+.wvc-ati-itunes:before {
+	content: '\f179';
+}
+
+.wvc-ati-amazon:before {
+	content: '\f270';
+	top: 2px;
+}
+
+.wvc-ati-googleplay:before {
+	font-family: socicon;
+	content: '\e0a5';
+	top: 1px;
+}
+
+.wvc-ati-buy:before {
+	content: '\f07a';
+}
+
+.wvc-ati-add-to-cart:before {
+	content: '\f218';
+}
+
+.wvc-ati-download:before {
+	content: '\f0ed';
+}
+
+.wvc-font-dark {
+	li.wvc-album-tracklist-item {
+		border-color: rgba(0, 0, 0, 0.14);
+	}
+}
+
+.wvc-font-light {
+	li.wvc-album-tracklist-item {
+		border-color: rgba(255, 255, 255, 0.14);
+	}
+}
+
+.wvc-album-tracklist-500,
+.wvc-album-tracklist-380 {
+	li.wvc-album-tracklist-item {
+		font-size: 12px;
+	}
+
+	.wvc-ati-duration-cell {
+		display: none;
+	}
+
+	.wvc-ati-action-cell {
+		font-size: 14px;
+	}
+
+	.wvc-ati-title-cell {
+		padding-right: 8px;
+		width: 120px;
+		font-size: 12px;
+	}
+
+	.wvc-ati-play-button {
+		top: 3px;
+	}
+}
+
+.wvc-album-tracklist-380 {
+	// .wvc-ati-audio-cell,
+	// .wvc-ati-video-cell{
+	// 	width: 30px;
+	// }
+
+	// .wvc-ati-title-cell{
+	// 	width: 150px;
+	// }
+}

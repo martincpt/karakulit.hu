@@ -1,0 +1,42 @@
+.wvc-wc-search-form{
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	line-height: 1.5;
+	max-width: 700px;
+	font-size: 2em;
+
+	.search-field{
+		margin-bottom: 6px;
+	}
+
+	.search-submit{
+		display: block;
+		width: 100%;
+		margin-top: 0;
+		outline: none;
+	}
+}
+
+@media screen and (min-width: 800px) {
+
+	.wvc-wc-search-form{
+
+	}
+
+	.wvc-wc-search-form .woocommerce-product-search{
+		display: flex;
+		flex: 0 auto;
+		width: 100%;
+
+		.search-field{
+			flex: 1;
+			margin-right: 5px;
+			margin-bottom: 0;
+		}
+
+		.search-submit{
+			width: auto;
+		}
+	}
+}

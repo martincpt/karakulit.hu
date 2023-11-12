@@ -1,0 +1,24 @@
+2023-03-11T09:37:06+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function remove_action(), 1 passed in /home/martintr/karakulit.hu/wp-content/themes/kayo-child/functions.php on line 39 and at least 2 expected in /home/martintr/karakulit.hu/wp-includes/plugin.php:612
+Stack trace:
+#0 /home/martintr/karakulit.hu/wp-content/themes/kayo-child/functions.php(39): remove_action('kayo_work_meta')
+#1 /home/martintr/karakulit.hu/wp-includes/class-wp-hook.php(308): {closure}('')
+#2 /home/martintr/karakulit.hu/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#3 /home/martintr/karakulit.hu/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/martintr/karakulit.hu/wp-settings.php(595): do_action('after_setup_the...')
+#5 /home/martintr/karakulit.hu/wp-config.php(83): require_once('/home/martintr/...')
+#6 /home/martintr/karakulit.hu/wp-load.php(50): require_once('/home/martintr/...')
+#7 /home/martintr/karakulit.hu/wp-blog-header.php(13): require_once('/home/martintr/...')
+#8 /home/martintr/karakulit.hu/inde hiba /home/martintr/karakulit.hu/wp-includes/plugin.php fájlban a 612 sorban
+
+2023-03-11T09:37:33+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function remove_action(), 1 passed in /home/martintr/karakulit.hu/wp-content/themes/kayo-child/functions.php on line 39 and at least 2 expected in /home/martintr/karakulit.hu/wp-includes/plugin.php:612
+Stack trace:
+#0 /home/martintr/karakulit.hu/wp-content/themes/kayo-child/functions.php(39): remove_action('kayo_work_meta')
+#1 /home/martintr/karakulit.hu/wp-includes/class-wp-hook.php(308): {closure}('')
+#2 /home/martintr/karakulit.hu/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#3 /home/martintr/karakulit.hu/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/martintr/karakulit.hu/wp-settings.php(595): do_action('after_setup_the...')
+#5 /home/martintr/karakulit.hu/wp-config.php(83): require_once('/home/martintr/...')
+#6 /home/martintr/karakulit.hu/wp-load.php(50): require_once('/home/martintr/...')
+#7 /home/martintr/karakulit.hu/wp-blog-header.php(13): require_once('/home/martintr/...')
+#8 /home/martintr/karakulit.hu/inde hiba /home/martintr/karakulit.hu/wp-includes/plugin.php fájlban a 612 sorban
+

@@ -1,0 +1,169 @@
+<?php
+/**
+ * Section shortcode template
+ *
+ * @author WolfThemes
+ * @category Core
+ * @package %PACKAGENAME%/Templates
+ * @version %VERSION%
+ */
+
+defined( 'ABSPATH' ) || exit;
+
+$atts = vc_map_get_attributes( $this->getShortcode(), $atts );
+
+extract( shortcode_atts( array(
+	'full_height' => '',
+	'min_height' => '',
+	'background_type' => 'default',
+	'background_color' => '',
+	'background_img' => '',
+	'background_position' => 'center center',
+	'background_repeat' => 'no-repeat',
+	'background_size' => 'cover',
+	'background_effect' => '',
+	'slideshow_img_ids' => '',
+	'slideshow_speed' => '5000',
+	'video_bg_url' => '',
+	'video_bg_img' => '',
+	'add_overlay' => '',
+	'overlay_custom_color' => '#000000',
+	'overlay_opacity' => '',
+	'add_particles' => '',
+	'particles_type' => 'default',
+	'arrow_down' => '',
+	'arrow_down_text' => '',
+	'css_animation' => '',
+	'css_animation_delay' => '',
+	'hide_class' => '',
+	'css' => '',
+	'el_id' => '',
+	'section_name' => '',
+	'el_class' => '',
+	'inline_style' => '',
+), $atts ) );
+
+$slideshow_speed = ( $slideshow_speed ) ? $slideshow_speed : 5000;
+
+wp_enqueue_script( 'wpb_composer_front_js' );
+
+$el_class = $this->getExtraClass( $el_class ) . wvc_get_css_animation( $css_animation );
+
+$output = '';
+
+if ( $min_height ) {
+	$min_height = wvc_sanitize_css_value( $min_height );
+	$inline_style .= "min-height:$min_height;";
+}
+
+$css_classes = array(
+	'wvc-clearfix',
+	$el_class,
+	//vc_shortcode_custom_css_class( $css ),
+	'wvc-section',
+	"wvc-section-bg-$background_type",
+	"wvc-section-bg-effect-$background_effect",
+	$hide_class,
+);
+
+$inline_style = wvc_sanitize_css_field( $inline_style );
+$inline_style .= wvc_shortcode_custom_style( $css );
+
+$wrapper_css_classes = array(
+	//'wvc-section-wrapper',
+	//"wvc-section-wrapper-width-$content_type",
+);
+
+$wrapper_attributes = array();
+
+// build attributes for wrapper
+if ( $section_name ) {
+	$el_id = sanitize_title( $section_name );
+	$wrapper_attributes[] = 'id="' . esc_attr( $el_id ) . '" data-row-name="' . esc_attr( $section_name ) . '"';
+}
+
+if ( $full_height ) {
+	$css_classes[] = 'wvc-section-full-height';
+}
+
+$row_css_class = wvc_array_to_list( $css_classes, ' ' );
+
+$wrapper_css_classes = wvc_array_to_list( $wrapper_css_classes, ' ' );
+
+$wrapper_attributes[] = 'class="' . wvc_sanitize_html_classes( $row_css_class ) . '"';
+
+$output .= '<section ' . implode( ' ', $wrapper_attributes ) . ' style="' . wvc_esc_style_attr( $inline_style ) . '">';
+
+if ( 'image' === $background_type ) {
+
+	$img_bg_args = array(
+		'background_img' => $background_img,
+		'background_color' => $background_color,
+		'background_position' => $background_position,
+		'background_repeat' => $background_repeat,
+		'background_size' => $background_size,
+		'background_effect' => $background_effect,
+	);
+
+	$output .= wvc_background_img( $img_bg_args );
+
+// video background
+} elseif ( 'video' === $background_type ) {
+
+	$video_bg_args = array(
+		'video_bg_url' => $video_bg_url,
+		'video_bg_img' => $video_bg_img,
+		//'video_bg_controls' => $video_bg_controls,
+	);
+
+	$output .= wvc_background_video( $video_bg_args );
+
+} elseif ( 'slideshow' === $background_type ) {
+
+	$slideshow_args = array(
+		'slideshow_img_ids' => $slideshow_img_ids,
+		'slideshow_speed' => $slideshow_speed,
+	);
+
+	$output .= wvc_background_slideshow( $slideshow_args );
+}
+
+if ( 'yes' === $add_particles ) {
+
+	wp_enqueue_script( 'particles' );
+	wp_enqueue_script( 'wvc-particles' );
+
+	$particles_rand = 'wvc-particles-' . rand( 0, 9999 );
+
+	$output .= '<div class="wvc-bg-overlay wvc-particles" id="' . esc_attr( $particles_rand ) . '"></div>';
+}
+
+if ( 'yes' === $add_overlay ) {
+
+	$output .= wvc_background_overlay( array( 'overlay_color' => $overlay_custom_color, 'overlay_opacity' => $overlay_opacity, ) );
+}
+
+
+$output .= '<div class="wvc-section-content">'; // wrapper
+
+$output .= wpb_js_remove_wpautop( $content );
+
+	/* scroll to next section arrow */
+	if ( $arrow_down ) {
+
+		$output .= '<span class="wvc-arrow-down">';
+
+		if ( $arrow_down_text ) {
+			$output .= '<span class="wvc-arrow-down-text">';
+			$output .= $arrow_down_text;
+			$output .= '</span>';
+		}
+
+		$output .= '</span>';
+	}
+
+$output .= '</div><!--.wvc-section-content-->';
+
+$output .= '</section><!--.wvc-section-->';
+
+echo $output;

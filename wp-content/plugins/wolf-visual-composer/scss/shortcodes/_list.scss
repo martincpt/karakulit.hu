@@ -1,0 +1,55 @@
+.wvc-list-has-icon{
+	ul{
+		list-style-type: none;
+		padding:0 0 0 0;
+		margin:0 0 0 0;
+
+		li{
+			list-style-type: none!important;
+			padding-bottom: 10px;
+
+			&:last-of-type{
+				padding-bottom: 0;
+			}
+		}
+
+		li .fa{
+			margin-right: 8px;
+			font-size: 0.8em;
+			transition:all .3s ease;
+		}
+	}
+
+}
+
+.wvc-list-no-icon{
+	ul{
+		list-style-type: none!important;
+		padding-left: 0!important;
+
+		li{
+			list-style-type: none!important;
+		}
+	}
+}
+
+.wvc-list-animate-icon{
+	ul li{
+
+		position: relative;
+		transition:left .3s ease;
+		left: -20px;
+
+		.fa{
+			opacity: 0;
+		}
+
+		&:hover{
+			left: 0;
+
+			.fa{
+				opacity: 1;
+			}
+		}
+	}
+}

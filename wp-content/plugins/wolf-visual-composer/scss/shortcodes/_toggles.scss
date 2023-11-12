@@ -1,0 +1,72 @@
+$toggle_margin:28px;
+
+.wvc-toggle{
+	margin-bottom: 15px;
+}
+
+.wvc-column-wrapper{
+	.wvc-toggle:last-of-type{
+		margin-bottom: 35px;
+	}
+}
+
+.wvc-toggle-content p{
+	margin-top: 0;
+
+	&:last-of-type{
+		margin-bottom: 0;
+	}
+}
+
+.wvc-toggle-title{
+	cursor: pointer;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.wvc-toggle-content{
+	padding-left: $toggle_margin;
+}
+
+.wvc-toggle-title{
+	position: relative;
+	line-height: 2;
+
+	.wvc-toggle-plus{
+		position: relative;
+		display: inline-block;
+		width: $toggle_margin;
+		height: $toggle_margin;
+		line-height: $toggle_margin;
+		vertical-align: middle;
+		text-align: left;
+
+		&:before{
+			line-height: inherit;
+			text-align: left;
+			width: $toggle_margin;
+			height: $toggle_margin;
+			font-family: FontAwesome;
+			content: "\f067";
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+}
+
+.wvc-toggle{
+	//margin-bottom: 15px;
+}
+
+.wvc-toggle-open{
+	.wvc-toggle-title .wvc-toggle-plus:before{
+		content: "\f068";
+	}
+}
+
+.wvc-toggle-close{
+	.wvc-toggle-content{
+		display: none;
+	}
+}

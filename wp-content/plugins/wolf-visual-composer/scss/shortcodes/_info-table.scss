@@ -1,0 +1,32 @@
+.wvc-info-table {
+
+	ul{
+
+		margin: 0;
+		padding: 0;
+
+		li{
+
+			width: 100%;
+			display: table;
+			table-layout:fixed;
+			max-width: 600px;
+
+			.wvc-it-label,
+			.wvc-it-value{
+				display: table-cell;
+				height: 44px;
+				vertical-align: center;
+			}
+
+			.wvc-it-label{
+				min-width: 120px;
+				font-weight: 700;
+			}
+
+			.wvc-it-value{
+				
+			}
+		}
+	}
+}

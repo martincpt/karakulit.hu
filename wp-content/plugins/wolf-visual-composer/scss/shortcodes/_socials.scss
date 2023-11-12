@@ -1,0 +1,180 @@
+.wvc-socials-container{
+	margin: 0 auto;
+	//text-align: center;
+	padding: 1em 0;
+
+	&.wvc-text-center{
+		max-width: 92%;
+	}
+
+	a{
+		display: inline-block;
+	}
+}
+
+.wvc-social-icon{
+	display: inline-block;
+
+	a{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: block;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.wvc-social-icon{
+	.wvc-icon-container{
+		margin: .5em .5em .5em
+	}
+}
+
+/* Alignement */
+.wvc-socials-container{
+	&.wvc-text-left{
+		margin-left: -0.5em;
+	}
+
+	&.wvc-text-right{
+		margin-right: -0.5em;
+	}
+}
+
+/* Direction */
+.wvc-si-direction-vertical{
+	margin: 0;
+	padding: 0;
+
+	.wvc-social-icon{
+		display: block;
+   		 text-align: center;
+	}
+
+	.wvc-icon-container{
+		margin: 0;
+	}
+
+	display: flex;
+	flex-direction: column;
+
+	&.wvc-si-size-fa-1x{
+		width: 1.4em;
+	}
+
+	&.wvc-si-size-fa-2x{
+		width: 2em;
+	}
+
+	&.wvc-si-size-fa-3x{
+		width: 3em;
+	}
+
+	&.wvc-si-size-fa-4x{
+		width: 4em;
+	}
+
+	&.wvc-si-size-fa-5x{
+		width: 5em;
+	}
+
+	&.wvc-text-center{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&.wvc-text-left{
+		margin-right: auto;
+		margin-left: 0;
+	}
+
+	&.wvc-text-right{
+		margin-left: auto;
+		margin-right: 0;
+	}
+}
+
+/* Widget */
+.wvc_widget_socials{
+	.wvc-socials-container{
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.wvc-icon{
+		font-size: 18px;
+		margin: 0 5px;
+
+		&:first-child{
+			margin-left: 0;
+		}
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+
+/* Icon adjustment */
+
+.wvc-social.wvc-circle,
+.wvc-social.wvc-square{
+
+	&.fa-facebook:before{
+		left: 47%;
+		top: 51%;
+	}
+
+	&.wolficon-forrst:before{
+		left: 52%;
+	}
+
+	&.fa-tumblr:before{
+		left: 47%;
+	}
+
+	&.fa-skype:before{
+		left: 48%;
+	}
+}
+
+// .wvc-font-dark{
+// 	.wvc-icon-color-default{
+// 		color: #444;
+// 	}
+// 	.wvc-icon-background-color-default{
+// 		box-shadow:0 0 0 0 #444;
+// 		background-color:#444;
+// 		color:#444;
+// 		border-color:#444;
+
+// 		.wvc-icon-background-fill{
+// 			box-shadow:0 0 0 0 #444;
+// 			background-color:#444;
+// 		}
+// 	}
+// }
+
+
+// .wvc-font-light{
+// 	.wvc-icon-color-default{
+// 		color: #fff;
+// 	}
+// 	.wvc-icon-background-color-default{
+// 		box-shadow:0 0 0 0 #fff;
+// 		background-color:#fff;
+// 		color:#fff;
+// 		border-color:#fff;
+
+// 		.wvc-icon-background-fill{
+// 			box-shadow:0 0 0 0 #fff;
+// 			background-color:#fff;
+// 		}
+// 	}
+// }
+
+.wvc-social-icon{
+	
+}

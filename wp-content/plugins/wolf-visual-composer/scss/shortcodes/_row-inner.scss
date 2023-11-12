@@ -1,0 +1,51 @@
+.wvc-row-inner-wrapper{
+	position: relative;
+	width: 100%;
+}
+
+.wvc-row-inner-wrapper-width-standard{
+	max-width: 1140px;
+	margin:0 auto;
+}
+
+.wvc-row-inner-wrapper-width-small{
+	max-width: 750px;
+	margin:0 auto;
+}
+
+.wvc-row-inner-content{
+	width: 100%; // force full width in flex layout
+}
+
+/* Inner row default bottom margin */
+.wvc-row-inner{
+	position: relative; // 1.9.9
+	padding-bottom: 35px; // default padding bottom
+}
+
+.wvc-row{
+	.wvc-row-inner:last-child{
+		padding-bottom: 0;
+	}
+}
+
+.wvc-row-inner-column-equal-height-yes{
+	.wvc-row-inner-content{
+		align-items: stretch;
+
+		.wvc-column{
+			align-self:center;
+		}
+
+		.wvc-column-container{
+			height: 100%;
+		}
+	}
+}
+
+// to do
+.wvc-row-inner-layout-block{
+	.wvc-column-container{
+		//padding: 4em;
+	}
+}

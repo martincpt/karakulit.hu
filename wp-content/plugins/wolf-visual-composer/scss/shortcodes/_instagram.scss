@@ -1,0 +1,169 @@
+.wvc-wolf-gram-shortcode-container {
+	position: relative;
+}
+
+.wolf-instagram-media-likes {
+	&:before {
+		top: 0;
+		margin-right: 8px;
+		font-family: FontAwesome;
+		content: '\f004';
+	}
+}
+
+.wolf-instagram-media-comments {
+	&:before {
+		top: 0;
+		margin-right: 8px;
+		font-family: FontAwesome;
+		content: '\f075';
+	}
+}
+
+.wvc-i-hide_meta-true {
+	.wolf-instagram-overlay {
+		visibility: hidden;
+	}
+
+	.wolf-instagram-link {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 5;
+	}
+
+	.wolf-instagram-item {
+		transition: opacity 0.2s ease;
+		transform: translate3d(0, 0, 0); // fix glitch
+	}
+
+	.wolf-instagram-item:hover {
+		opacity: 0.66;
+	}
+}
+
+$wvci_padding: 8px;
+.wvc-i-padding-true {
+	.wolf-instagram-gallery {
+		margin-top: -$wvci_padding;
+		margin-left: -$wvci_padding;
+	}
+
+	.wolf-instagram-item-container {
+		padding: $wvci_padding;
+	}
+
+	.wolf-instagram-gallery-small {
+		margin-top: -4px;
+		margin-left: -4px;
+
+		.wolf-instagram-item-container {
+			padding: 4px;
+		}
+	}
+
+	.wolf-instagram-gallery-big {
+		margin-top: -14px;
+		margin-left: -14px;
+
+		.wolf-instagram-item-container {
+			padding: 14px;
+		}
+	}
+}
+
+.wvc-instagram-gallery {
+	.wvc-img {
+		position: relative;
+		height: 0;
+		padding-bottom: 100%; // fix glitch
+	}
+}
+
+.wolf-gram-follow-button {
+	position: absolute;
+	display: inline-block;
+	background: #fff;
+	color: #333 !important;
+	font-weight: 400;
+	z-index: 999;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	padding: 1em 1.2em;
+	line-height: 1;
+	border: 1px solid #fff;
+	text-transform: uppercase;
+	font-size: 11px;
+	letter-spacing: 1px;
+}
+
+.wolf-instagram-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	transition: 0.4s;
+	opacity: 0;
+	background: #000 50% 50% no-repeat;
+	background: rgba(0, 0, 0, 0.44);
+	background-size: 48px 48px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.wvc-wolf-gram-shortcode-container:not(.wvc-sbif-disable-hover-true) {
+	.sbi_photo {
+		opacity: 1 !important;
+		z-index: 30;
+	}
+
+	.sbi_item .sbi_photo {
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			display: block;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.3);
+			opacity: 0;
+			transition: opacity 0.2s ease;
+			z-index: 10;
+		}
+	}
+
+	.sbi_item:not(.sbi_type_video) .sbi_photo {
+		&:after {
+			position: absolute;
+			display: inline-block;
+			font-style: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			font-family: 'Font Awesome 5 Brands';
+			content: '\f16d';
+			color: white;
+			top: 50%;
+			left: 50%;
+			transform: translate3d(-50%, -50%, 0);
+			transition: opacity 0.2s ease;
+			opacity: 0;
+			z-index: 20;
+			font-size: 18px;
+		}
+
+		&:hover {
+			&:before,
+			&:after {
+				opacity: 1;
+			}
+		}
+	}
+}

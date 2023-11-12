@@ -1,0 +1,52 @@
+[class^="ti-"]:before, [class*=" ti-"]:before{
+  display: inline-block;
+  font: normal normal normal 14px/1 'custom-icons';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="ti-"], [class*=" ti-"] {
+  font-family: 'custom-icons';
+}
+
+.ti-bandsintown:before {
+  content: "\e900";
+}
+.ti-wolf:before {
+  content: "\e901";
+}
+.ti-forrrst:before {
+  content: "\e011";
+}
+.ti-soundcloud:before {
+  content: "\e013";
+}
+.ti-ampersand:before {
+  content: "\e01d";
+}
+.ti-deviantart:before {
+  content: "\e02a";
+}
+.ti-zerply:before {
+  content: "\e050";
+}
+.ti-myspace:before {
+  content: "\e051";
+}
+.ti-grooveshark:before {
+  content: "\e052";
+}
+.ti-evernote:before {
+  content: "\e053";
+}
+.ti-tripadvisor:before {
+  content: "\e600";
+}
+.ti-cart:before {
+  content: "\e60a";
+}
+.ti-basket:before {
+  content: "\e60d";
+}

@@ -1,0 +1,125 @@
+.wvc-banner{
+	position: relative;
+	//display: inline-block;
+	margin: 0 auto;
+}
+
+.wvc-banner-link-mask{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+}
+
+.wvc-banner-image{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+
+	img{
+		backface-visibility: visible;
+		width: 100%; // force full width
+	}
+}
+
+.wvc-banner-caption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	padding: 35px;
+}
+
+.wvc-banner-caption-table{
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.wvc-banner-caption-table-cell{
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+}
+
+.wvc-banner-title{
+	width: 100%;
+	margin-bottom: 0;
+}
+
+.wvc-banner-tagline{
+	width: 100%;
+}
+
+.wvc-banner-alignment-center{
+	text-align: center;
+}
+
+.wvc-banner-alignment-left{
+	text-align: left;
+	margin-left: 0;
+}
+
+.wvc-banner-alignment-right{
+	text-align: right;
+	margin-right: 0;
+}
+
+// Txt align
+.wvc-banner-text-align-left{
+	.wvc-banner-caption{
+		text-align: left;
+	}
+}
+
+.wvc-banner-text-align-center{
+	.wvc-banner-caption{
+		text-align: center;
+	}
+}
+
+.wvc-banner-text-align-right{
+	.wvc-banner-caption{
+		text-align: right;
+	}
+}
+
+// Text Valign
+.wvc-banner-text-vertical-align-top{
+	.wvc-banner-caption-table-cell{
+		vertical-align: top;
+	}
+}
+
+.wvc-banner-text-vertical-align-middle{
+	.wvc-banner-caption-table-cell{
+		vertical-align: middle;
+	}
+}
+
+.wvc-banner-text-vertical-align-bottom{
+	.wvc-banner-caption-table-cell{
+		vertical-align: bottom;
+	}
+}
+
+.wvc-banner-price{
+	display: block;
+	font-size: 1.5em;
+	font-weight: 700;
+}
+.wvc-banner{
+	.wvc-button-container{
+		margin-top: 14px;
+		z-index: 5;
+	}
+}

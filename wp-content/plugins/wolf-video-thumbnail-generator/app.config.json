@@ -1,0 +1,14 @@
+{
+	"version": "1.1.0",
+	"updated": "2021-05-21",
+	"slug": "wolf-video-thumbnail-generator",
+	"name": "Video Thumbnail Generator",
+	"packagename": "WolfVideoThumbnailGenerator",
+	"created": "2016-12-16",
+	"createdNice": "16th december 2016",
+	"description": "Generate an image from the first video in the post. Supports YouTube and Vimeo.",
+	"link": "https://github.com/wolfthemes/wolf-video-thumbnail-generator",
+	"shortlink": "https://wlfthm.es/video-thumbnail-generator",
+	"author": "WolfThemes",
+	"authorURI": "https://wolfthemes.com"
+}

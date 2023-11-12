@@ -1,0 +1,80 @@
+/*
+Theme Name: Kayo Child
+Theme URI: https://demos.wolfthemes.com/kayo/landing/
+Description: Kayo Child theme
+Author: WolfThemes
+Author URI: https://wolfthemes.com
+Template: kayo
+Version: 1.1.4
+*/
+
+:root{
+	--margin-space: 24px;
+}
+
+.nav-menu-desktop li { font-size: 12px; }
+
+#nav-bar, 
+body.menu-layout-top-right #nav-bar .logo { transition: all 200ms ease; }
+
+body.home #nav-bar, 
+body.home #mobile-bar .logo{opacity:0}
+body.home.menu-layout-top-right.menu-sticky-hard.sticking #nav-bar, 
+body.home.menu-layout-top-right.menu-sticky-hard.sticking #mobile-bar .logo {opacity:1}
+
+body.menu-layout-top-right.menu-sticky-hard.sticking #nav-bar { box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 6%)!important; }
+.mobile-menu-toggle .nav-bar{opacity: 1}
+
+@media screen and (max-width: 800px) {
+	article.work {     
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	
+	article.work > div.is_stuck { position: static!important; }
+	article.work > div:nth-child(3) { display:none!important; }
+}
+
+dl, ol, p, pre, ul {
+    margin-bottom: var(--margin-space);
+}
+
+.single-work-layout-sidebar-left .work-meta-container, 
+.single-work-layout-sidebar-right .work-meta-container{
+	margin: 0;
+}
+
+.work-meta-container ul{
+	margin: 20px 0;
+}
+
+.category-filter ul li {
+	margin: 5px 8px
+}
+
+.category-filter ul li a {
+	padding: 0px 10px;
+}
+
+.category-filter ul li a[data-filter^="work_type-aprilis"]{
+	background: bisque;
+}
+
+.category-filter ul li a[data-filter="work_type-aprilis-20"]{
+	background: beige;
+}
+.category-filter ul li a[data-filter="work_type-aprilis-21"]{
+	background: bisque;
+}
+
+.category-filter ul li a[data-filter="work_type-aprilis-22"]{
+	background: aquamarine;
+}
+
+.category-filter ul li a[data-filter="work_type-aprilis-23"]{
+	background: darkseagreen;
+}
+
+.grecaptcha-badge { 
+    visibility: hidden;
+}

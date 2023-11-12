@@ -1,0 +1,78 @@
+/* Fluid video */
+.wvc-fluid-video{
+	display: block;
+	width: 100%;
+	//margin-bottom: 20px;
+	height: 0;
+	padding-bottom: 56.25%;
+	overflow: hidden;
+	position: relative;
+}
+
+.wvc-fluid-video{
+	iframe,
+	embed,
+	object,
+	video{
+		width: 100%!important;
+		height: 100%!important;
+		position: absolute!important;
+		top: 0; left: 0;
+	}
+}
+
+/* Make video shortcode responsive without JS */
+.wvc-video-shortcode-container,
+.wvc-vs-big-video-inner{ // apply to video switcher as well
+
+	.wp-video,
+	video.wp-video-shortcode,
+	.mejs-container,
+	.mejs-poster,
+	.mejs-overlay.load {
+		width: 100% !important;
+	}
+
+	.mejs-poster{
+		height: 100%!important;
+	}
+
+	video.wp-video-shortcode,
+	.mejs-layer{
+		height: auto;
+	}
+
+	.mejs-container {
+		height: auto!important;
+		padding-top:56.25%;
+	}
+
+	.wp-video, video.wp-video-shortcode {
+		max-width: 100% !important;
+	}
+
+	video.wp-video-shortcode {
+		position: relative;
+	}
+
+	.mejs-mediaelement {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	.mejs-overlay-play {
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: auto !important;
+		height: auto !important;
+	}
+
+	.mejs-overlay-loading{
+		display: none;
+	}
+}

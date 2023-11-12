@@ -1,0 +1,40 @@
+.wvc-columns-container-4-cols,
+.wvc-columns-container-6-cols{
+	.wvc-col-3,
+	.wvc-col-2{
+		display: inline-flex;
+		width: 50%;
+	}
+}
+
+
+.wvc-row-layout-column{
+
+	.wvc-columns-container-4-cols{
+		.wvc-col-3{
+			padding: 0 17px;
+
+			&:nth-child(2n+1){
+				padding-left: 0;
+			}
+
+			&:nth-child(2n+0){
+				padding-right: 0;
+			}
+		}
+	}
+
+	.wvc-columns-container-6-cols{
+		.wvc-col-2{
+			padding: 0 17px;
+
+			&:nth-child(2n+1){
+				padding-left: 0;
+			}
+
+			&:nth-child(2n+0){
+				padding-right: 0;
+			}
+		}
+	}
+}

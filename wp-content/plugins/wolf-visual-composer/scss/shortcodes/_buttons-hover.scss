@@ -1,0 +1,441 @@
+//@media screen and (min-width: 500px) {
+	/* No hover effect */
+.wvc-button-hover-none{
+
+	&.wvc-button-shape-standard,
+	&.wvc-button-shape-rounded-less,
+	&.wvc-button-shape-rounded,
+	&.wvc-button-shape-boxed{
+		color: #fff;
+
+		&.wvc-button-background-color-white,
+		&.wvc-button-background-color-lightergrey{
+			color: #444;
+		}
+
+		&.wvc-button-background-color-gradient-color-105898 span, // green
+		&.wvc-button-background-color-gradient-color-111420 span, // green circle
+		&.wvc-button-background-color-gradient-color-3452ff span, // red salient
+		&.wvc-button-background-color-gradient-color-588694 span, // red uncode
+		&.wvc-button-background-color-gradient-color-470604 span, // orange
+		&.wvc-button-background-color-gradient-color-b900b4 span, // violet
+		&.wvc-button-background-color-gradient-color-105898 .fa, // green
+		&.wvc-button-background-color-gradient-color-111420 .fa, // green circle
+		&.wvc-button-background-color-gradient-color-3452ff .fa, // red salient
+		&.wvc-button-background-color-gradient-color-588694 .fa, // red uncode
+		&.wvc-button-background-color-gradient-color-470604 .fa, // orange
+		&.wvc-button-background-color-gradient-color-b900b4 .fa // violet
+		{
+			background: #fff;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: #fff;
+		}
+	}
+
+	&.wvc-button-shape-standard-outline,
+	&.wvc-button-shape-rounded-less-outline,
+	&.wvc-button-shape-rounded-outline,
+	&.wvc-button-shape-boxed-outline{
+		background:none;
+	}
+}
+
+/* Hover effect */
+.wvc-button-hover-opacity{
+
+	transition:opacity .3s ease;
+
+	&.wvc-button-shape-standard,
+	&.wvc-button-shape-rounded-less,
+	&.wvc-button-shape-rounded,
+	&.wvc-button-shape-boxed{
+		color: #fff;
+
+		&.wvc-button-background-color-white,
+		&.wvc-button-background-color-lightergrey{
+			color: #444;
+		}
+
+		&.wvc-button-background-color-gradient-color-105898 span, // green
+		&.wvc-button-background-color-gradient-color-111420 span, // green circle
+		&.wvc-button-background-color-gradient-color-3452ff span, // red salient
+		&.wvc-button-background-color-gradient-color-588694 span, // red uncode
+		&.wvc-button-background-color-gradient-color-470604 span, // orange
+		&.wvc-button-background-color-gradient-color-b900b4 span, // violet
+		&.wvc-button-background-color-gradient-color-105898 .fa, // green
+		&.wvc-button-background-color-gradient-color-111420 .fa, // green circle
+		&.wvc-button-background-color-gradient-color-3452ff .fa, // red salient
+		&.wvc-button-background-color-gradient-color-588694 .fa, // red uncode
+		&.wvc-button-background-color-gradient-color-470604 .fa, // orange
+		&.wvc-button-background-color-gradient-color-b900b4 .fa // violet
+		{
+			background: #fff;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: #fff;
+		}
+	}
+
+	&.wvc-button-shape-standard-outline,
+	&.wvc-button-shape-rounded-less-outline,
+	&.wvc-button-shape-rounded-outline,
+	&.wvc-button-shape-boxed-outline{
+		background:none;
+	}
+
+	&:hover{
+		opacity: .66;
+	}
+}
+
+// Background
+.wvc-button-hover-background{
+
+	transition:background .3s ease;
+
+	&.wvc-button-shape-standard,
+	&.wvc-button-shape-rounded-less,
+	&.wvc-button-shape-rounded,
+	&.wvc-button-shape-boxed{
+
+		&:not(:hover){
+			color: #fff;
+		}
+
+		&.wvc-button-background-color-white:not(:hover),
+		&.wvc-button-background-color-lightergrey:not(:hover){
+			color: #444;
+		}
+
+		&.wvc-button-background-color-gradient-color-105898:not(:hover) span, // green
+		&.wvc-button-background-color-gradient-color-111420:not(:hover) span, // green circle
+		&.wvc-button-background-color-gradient-color-3452ff:not(:hover) span, // red salient
+		&.wvc-button-background-color-gradient-color-588694:not(:hover) span, // red uncode
+		&.wvc-button-background-color-gradient-color-470604:not(:hover) span, // orange
+		&.wvc-button-background-color-gradient-color-b900b4:not(:hover) span, // violet
+		&.wvc-button-background-color-gradient-color-105898:not(:hover) .fa, // green
+		&.wvc-button-background-color-gradient-color-111420:not(:hover) .fa, // green circle
+		&.wvc-button-background-color-gradient-color-3452ff:not(:hover) .fa, // red salient
+		&.wvc-button-background-color-gradient-color-588694:not(:hover) .fa, // red uncode
+		&.wvc-button-background-color-gradient-color-470604:not(:hover) .fa, // orange
+		&.wvc-button-background-color-gradient-color-b900b4:not(:hover) .fa // violet
+		{
+			background: #fff;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: #fff;
+		}
+
+		&:hover{
+			background:none;
+
+			&.wvc-button-background-color-white,
+			&.wvc-button-background-color-lightergrey{
+				color: #fff;
+			}
+		}
+	}
+
+	&.wvc-button-shape-standard-outline,
+	&.wvc-button-shape-rounded-less-outline,
+	&.wvc-button-shape-rounded-outline,
+	&.wvc-button-shape-boxed-outline{
+		&:not(:hover){
+			background:none;
+		}
+
+		&.wvc-button-background-color-white,
+		&.wvc-button-background-color-lightergrey{
+			color: #fff;
+		}
+
+		&:hover{
+			color: #fff;
+		}
+
+		&.wvc-button-background-color-white:hover,
+		&.wvc-button-background-color-lightergrey:hover{
+			color: #444;
+		}
+
+		&.wvc-button-background-color-gradient-color-105898:not(:hover) span, // green
+		&.wvc-button-background-color-gradient-color-111420:not(:hover) span, // green circle
+		&.wvc-button-background-color-gradient-color-3452ff:not(:hover) span, // red salient
+		&.wvc-button-background-color-gradient-color-588694:not(:hover) span, // red uncode
+		&.wvc-button-background-color-gradient-color-470604:not(:hover) span, // orange
+		&.wvc-button-background-color-gradient-color-b900b4:not(:hover) span, // violet
+		&.wvc-button-background-color-gradient-color-105898:not(:hover) .fa, // green
+		&.wvc-button-background-color-gradient-color-111420:not(:hover) .fa, // green circle
+		&.wvc-button-background-color-gradient-color-3452ff:not(:hover) .fa, // red salient
+		&.wvc-button-background-color-gradient-color-588694:not(:hover) .fa, // red uncode
+		&.wvc-button-background-color-gradient-color-470604:not(:hover) .fa, // orange
+		&.wvc-button-background-color-gradient-color-b900b4:not(:hover) .fa // violet
+		{
+			background: #fff;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: #fff;
+		}
+	}
+}
+
+// Up
+.wvc-button-hover-upper{
+
+	transition:transform .3s ease,box-shadow .3s ease;
+
+	&.wvc-button-shape-standard,
+	&.wvc-button-shape-rounded-less,
+	&.wvc-button-shape-rounded,
+	&.wvc-button-shape-boxed{
+		color: #fff;
+
+		&.wvc-button-background-color-white,
+		&.wvc-button-background-color-lightergrey{
+			color: #444;
+		}
+
+		&.wvc-button-background-color-gradient-color-105898 span, // green
+		&.wvc-button-background-color-gradient-color-111420 span, // green circle
+		&.wvc-button-background-color-gradient-color-3452ff span, // red salient
+		&.wvc-button-background-color-gradient-color-588694 span, // red uncode
+		&.wvc-button-background-color-gradient-color-470604 span, // orange
+		&.wvc-button-background-color-gradient-color-b900b4 span, // violet
+		&.wvc-button-background-color-gradient-color-105898 .fa, // green
+		&.wvc-button-background-color-gradient-color-111420 .fa, // green circle
+		&.wvc-button-background-color-gradient-color-3452ff .fa, // red salient
+		&.wvc-button-background-color-gradient-color-588694 .fa, // red uncode
+		&.wvc-button-background-color-gradient-color-470604 .fa, // orange
+		&.wvc-button-background-color-gradient-color-b900b4 .fa // violet
+		{
+			background: #fff;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: #fff;
+		}
+	}
+
+	&.wvc-button-shape-standard-outline,
+	&.wvc-button-shape-rounded-less-outline,
+	&.wvc-button-shape-rounded-outline,
+	&.wvc-button-shape-boxed-outline{
+		background:none;
+	}
+
+	&:hover{
+		transform: translateY(-3px);
+		box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16)
+	}
+}
+
+// Fill Vertical
+.wvc-button-hover-fill-vertical{
+
+	background-color:transparent!important;
+	background:none!important;
+	overflow: hidden;
+
+	span{
+		//transition: all 0.3s;
+		position: relative;
+		z-index: 1;
+	}
+
+	.wvc-button-background-fill{
+		display: block;
+		z-index: 0;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transition: height 0.3s;
+	}
+
+	&.wvc-button-shape-standard,
+	&.wvc-button-shape-rounded-less,
+	&.wvc-button-shape-rounded,
+	&.wvc-button-shape-boxed{
+		&:not(:hover){
+			color: #fff;
+		}
+
+		&.wvc-button-background-color-gradient-color-105898:not(:hover) span, // green
+		&.wvc-button-background-color-gradient-color-111420:not(:hover) span, // green circle
+		&.wvc-button-background-color-gradient-color-3452ff:not(:hover) span, // red salient
+		&.wvc-button-background-color-gradient-color-588694:not(:hover) span, // red uncode
+		&.wvc-button-background-color-gradient-color-470604:not(:hover) span, // orange
+		&.wvc-button-background-color-gradient-color-b900b4:not(:hover) span, // violet
+		&.wvc-button-background-color-gradient-color-105898:not(:hover) .fa, // green
+		&.wvc-button-background-color-gradient-color-111420:not(:hover) .fa, // green circle
+		&.wvc-button-background-color-gradient-color-3452ff:not(:hover) .fa, // red salient
+		&.wvc-button-background-color-gradient-color-588694:not(:hover) .fa, // red uncode
+		&.wvc-button-background-color-gradient-color-470604:not(:hover) .fa, // orange
+		&.wvc-button-background-color-gradient-color-b900b4:not(:hover) .fa // violet
+		{
+			background: #fff;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: #fff;
+		}
+
+		&.wvc-button-background-color-white:not(:hover),
+		&.wvc-button-background-color-lightergrey:not(:hover){
+			color: #333;
+		}
+
+		.wvc-button-background-fill{
+			height: 100%;
+		}
+
+		&:hover{
+			.wvc-button-background-fill{
+				height: 0;
+			}
+		}
+	}
+
+	&.wvc-button-shape-standard-outline,
+	&.wvc-button-shape-rounded-less-outline,
+	&.wvc-button-shape-rounded-outline,
+	&.wvc-button-shape-boxed-outline{
+		.wvc-button-background-fill{
+			height: 0;
+		}
+
+		&:hover{
+			color: #fff;
+
+			&.wvc-button-background-color-gradient-color-105898 span, // green
+			&.wvc-button-background-color-gradient-color-111420 span, // green circle
+			&.wvc-button-background-color-gradient-color-3452ff span, // red salient
+			&.wvc-button-background-color-gradient-color-588694 span, // red uncode
+			&.wvc-button-background-color-gradient-color-470604 span, // orange
+			&.wvc-button-background-color-gradient-color-b900b4:not(:hover) span, // violet
+			&.wvc-button-background-color-gradient-color-105898 .fa, // green
+			&.wvc-button-background-color-gradient-color-111420 .fa, // green circle
+			&.wvc-button-background-color-gradient-color-3452ff .fa, // red salient
+			&.wvc-button-background-color-gradient-color-588694 .fa, // red uncode
+			&.wvc-button-background-color-gradient-color-470604 .fa, // orange
+			&.wvc-button-background-color-gradient-color-b900b4 .fa // violet
+			{
+				background: #fff;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: #fff;
+			}
+
+			&.wvc-button-background-color-white,
+			&.wvc-button-background-color-lightergrey{
+				color: #333;
+			}
+
+			.wvc-button-background-fill{
+				height: 100%;
+			}
+		}
+	}
+}
+
+// Fill Horizontal
+.wvc-button-hover-fill-horizontal{
+
+	background-color:transparent!important;
+	background:none!important;
+	overflow: hidden;
+
+	span{
+		//transition: all 0.3s;
+		position: relative;
+		z-index: 1;
+	}
+
+	.wvc-button-background-fill{
+		display: block;
+		z-index: 0;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transition: width 0.3s;
+	}
+
+	&.wvc-button-shape-standard,
+	&.wvc-button-shape-rounded-less,
+	&.wvc-button-shape-rounded,
+	&.wvc-button-shape-boxed{
+		&:not(:hover){
+			color: #fff;
+		}
+
+		&.wvc-button-background-color-gradient-color-105898:not(:hover) span, // green
+		&.wvc-button-background-color-gradient-color-111420:not(:hover) span, // green circle
+		&.wvc-button-background-color-gradient-color-3452ff:not(:hover) span, // red salient
+		&.wvc-button-background-color-gradient-color-588694:not(:hover) span, // red uncode
+		&.wvc-button-background-color-gradient-color-470604:not(:hover) span, // orange
+		&.wvc-button-background-color-gradient-color-b900b4:not(:hover) span, // violet
+		&.wvc-button-background-color-gradient-color-105898:not(:hover) .fa, // green
+		&.wvc-button-background-color-gradient-color-111420:not(:hover) .fa, // green circle
+		&.wvc-button-background-color-gradient-color-3452ff:not(:hover) .fa, // red salient
+		&.wvc-button-background-color-gradient-color-588694:not(:hover) .fa, // red uncode
+		&.wvc-button-background-color-gradient-color-470604:not(:hover) .fa, // orange
+		&.wvc-button-background-color-gradient-color-b900b4:not(:hover) .fa // violet
+		{
+			background: #fff;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: #fff;
+		}
+
+		&.wvc-button-background-color-white:not(:hover),
+		&.wvc-button-background-color-lightergrey:not(:hover){
+			color: #333;
+		}
+
+		.wvc-button-background-fill{
+			width: 100%;
+		}
+
+		&:hover{
+			.wvc-button-background-fill{
+				height: 0;
+			}
+		}
+	}
+
+	&.wvc-button-shape-standard-outline,
+	&.wvc-button-shape-rounded-less-outline,
+	&.wvc-button-shape-rounded-outline,
+	&.wvc-button-shape-boxed-outline{
+		.wvc-button-background-fill{
+			width: 0;
+		}
+
+		&:hover{
+			color: #fff;
+
+			&.wvc-button-background-color-gradient-color-105898 span, // green
+			&.wvc-button-background-color-gradient-color-111420 span, // green circle
+			&.wvc-button-background-color-gradient-color-3452ff span, // red salient
+			&.wvc-button-background-color-gradient-color-588694 span, // red uncode
+			&.wvc-button-background-color-gradient-color-470604 span, // orange
+			&.wvc-button-background-color-gradient-color-b900b4 span, // violet
+			&.wvc-button-background-color-gradient-color-105898 .fa, // green
+			&.wvc-button-background-color-gradient-color-111420 .fa, // green circle
+			&.wvc-button-background-color-gradient-color-3452ff .fa, // red salient
+			&.wvc-button-background-color-gradient-color-588694 .fa, // red uncode
+			&.wvc-button-background-color-gradient-color-470604 .fa, // orange
+			&.wvc-button-background-color-gradient-color-b900b4 .fa // violet
+			{
+				background: #fff;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: #fff;
+			}
+
+			&.wvc-button-background-color-white,
+			&.wvc-button-background-color-lightergrey{
+				color: #333;
+			}
+
+			.wvc-button-background-fill{
+				width: 100%;
+			}
+		}
+	}
+}
+
+//} // end media query

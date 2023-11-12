@@ -1,0 +1,21 @@
+/* to prevent flickering for lazyload */
+.wvc-lazyload-bg {
+	opacity: 0;
+	transition: opacity 0.2s ease;
+	//transition-delay:5s!important;
+}
+
+.lazy-hidden {
+	opacity: 0;
+}
+
+.lazy-loaded {
+	opacity: 1 !important;
+}
+
+/* Fix for Safari issue not removing lazy-hidden class */
+.wvc-is-apple {
+	.lazy-hidden {
+		opacity: 1 !important;
+	}
+}

@@ -1,0 +1,34 @@
+.wvc-pie{
+	position: relative;
+	display: block;
+	height: 170px;
+	width: 170px;
+	line-height: 170px;
+	text-align: center;
+	margin: 0 auto;
+
+	canvas{
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+.wvc-pie-counter{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 34px;
+	line-height: inherit;
+	top: 0;
+	font-weight: 700;
+}
+
+.wvc-pie-heading{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	vertical-align: middle;
+	text-align: center;
+	margin: 25px 0 0;
+}

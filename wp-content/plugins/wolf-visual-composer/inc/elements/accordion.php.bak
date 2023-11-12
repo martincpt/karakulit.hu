@@ -1,0 +1,25 @@
+<?php
+/**
+ * Accordion
+ *
+ * @author WolfThemes
+ * @category Core
+ * @package %PACKAGENAME%/Elements
+ * @version %VERSION%
+ */
+
+defined( 'ABSPATH' ) || exit;
+
+// Overwite icon
+vc_map_update( 'vc_tta_accordion', array( 'icon' => 'fa fa fa-indent' ) );
+
+// Remove params
+vc_remove_param( 'vc_tta_accordion', 'title' );
+vc_remove_param( 'vc_tta_accordion', 'no_fill' );
+vc_remove_param( 'vc_tta_accordion', 'color' );
+vc_remove_param( 'vc_tta_accordion', 'style' );
+vc_remove_param( 'vc_tta_accordion', 'shape' );
+vc_remove_param( 'vc_tta_accordion', 'spacing' );
+vc_remove_param( 'vc_tta_accordion', 'gap' );
+vc_remove_param( 'vc_tta_accordion', 'c_icon' );
+vc_remove_param( 'vc_tta_accordion', 'c_position' );

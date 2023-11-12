@@ -1,0 +1,42 @@
+.wvc-highlight{
+	text-shadow: none;
+	display: inline-block;
+	padding: 0 5px;
+	line-height: 1.3em;
+	color: #fff!important;
+}
+
+@mixin highlight($color : #ff0 ){
+	background-color: $color!important;
+}
+
+/* White : #fff */
+span.wvc-highlight-white {
+	@extend .wvc-highlight;
+ 	@include highlight(#fff);
+}
+
+/* Black : #000 */
+span.wvc-highlight-black {
+	@extend .wvc-highlight;
+ 	@include highlight(#000);
+}
+
+/* Yellow : #ff0 */
+span.wvc-highlight-yellow {
+	@extend .wvc-highlight;
+ 	@include highlight();
+	color: #333333!important;
+}
+
+/* Red : #D45554; */
+span.wvc-highlight-red {
+	@extend .wvc-highlight;
+ 	@include highlight(#D45554);
+}
+
+/* Green : #327627; */
+span.wvc-highlight-green {
+	@extend .wvc-highlight;
+ 	@include highlight(#327627);
+}

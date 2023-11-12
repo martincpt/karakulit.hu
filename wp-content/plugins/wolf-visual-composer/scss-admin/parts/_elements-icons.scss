@@ -1,0 +1,11 @@
+.wvc-mailchimp{
+	font-family: 'custom-icons';
+	&:before {
+		content: "\e902";
+	}
+}
+
+.wvc-bandsintown:before{
+	font-family: 'custom-icons';
+	content: "\e900";
+}

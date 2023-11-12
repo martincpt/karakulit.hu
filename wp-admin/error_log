@@ -1,0 +1,69 @@
+[06-Mar-2023 12:57:27 UTC] WordPress database error Commands out of sync; you can't run this command now for query UPDATE `wp_options` SET `option_value` = '1678107507' WHERE `option_name` = 'action_scheduler_lock_async-request-runner' made by shutdown_action_hook, do_action('shutdown'), WP_Hook->do_action, WP_Hook->apply_filters, ActionScheduler_QueueRunner->maybe_dispatch_async_request, ActionScheduler_OptionLock->set, update_option
+[06-Mar-2023 12:57:27 UTC] WordPress database error Commands out of sync; you can't run this command now for query SELECT COUNT(DISTINCT claim_id) FROM wp_actionscheduler_actions WHERE claim_id != 0 AND status IN ( 'pending', 'in-progress') made by shutdown_action_hook, do_action('shutdown'), WP_Hook->do_action, WP_Hook->apply_filters, ActionScheduler_QueueRunner->maybe_dispatch_async_request, ActionScheduler_AsyncRequest_QueueRunner->maybe_dispatch, ActionScheduler_AsyncRequest_QueueRunner->allow, ActionScheduler_Abstract_QueueRunner->has_maximum_concurrent_batches, ActionScheduler_DBStore->get_claim_count
+[06-Mar-2023 12:57:27 UTC] WordPress database error Commands out of sync; you can't run this command now for query SELECT a.action_id FROM wp_actionscheduler_actions a WHERE 1=1 AND a.status IN ('pending') AND a.scheduled_date_gmt <= '2023-03-06 12:57:27' LIMIT 0, 5 made by shutdown_action_hook, do_action('shutdown'), WP_Hook->do_action, WP_Hook->apply_filters, ActionScheduler_QueueRunner->maybe_dispatch_async_request, ActionScheduler_AsyncRequest_QueueRunner->maybe_dispatch, ActionScheduler_AsyncRequest_QueueRunner->allow, ActionScheduler_Store->has_pending_actions_due, ActionScheduler_DBStore->query_actions
+[03-Apr-2023 10:06:33 UTC] WordPress database error Commands out of sync; you can't run this command now for query 	SELECT element_id, language_code
+						FROM wp_icl_translations
+						WHERE trid =
+							(SELECT trid
+							 FROM wp_icl_translations
+							 WHERE element_type = 'post_page'
+							 AND element_id = (SELECT option_value
+											   FROM wp_options
+											   WHERE option_name='page_on_front'
+											   LIMIT 1))
+						 made by shutdown_action_hook, do_action('shutdown'), WP_Hook->do_action, WP_Hook->apply_filters, LiteSpeed\Core->send_headers, LiteSpeed\Tag->output, LiteSpeed\Tag::_finalize, LiteSpeed\Tag::_build_type_tags, is_front_page, WP_Query->is_front_page, get_option, apply_filters('pre_option_page_on_front'), WP_Hook->apply_filters, SitePress->pre_option_page_on_front, WPML_Pre_Option_Page->get
+[08-Apr-2023 18:09:25 UTC] WordPress database error Commands out of sync; you can't run this command now for query 	SELECT element_id, language_code
+						FROM wp_icl_translations
+						WHERE trid =
+							(SELECT trid
+							 FROM wp_icl_translations
+							 WHERE element_type = 'post_page'
+							 AND element_id = (SELECT option_value
+											   FROM wp_options
+											   WHERE option_name='page_on_front'
+											   LIMIT 1))
+						 made by shutdown_action_hook, do_action('shutdown'), WP_Hook->do_action, WP_Hook->apply_filters, LiteSpeed\Core->send_headers, LiteSpeed\Tag->output, LiteSpeed\Tag::_finalize, LiteSpeed\Tag::_build_type_tags, is_front_page, WP_Query->is_front_page, get_option, apply_filters('pre_option_page_on_front'), WP_Hook->apply_filters, SitePress->pre_option_page_on_front, WPML_Pre_Option_Page->get
+[09-Apr-2023 10:03:30 UTC] WordPress database error Commands out of sync; you can't run this command now for query 	SELECT element_id, language_code
+						FROM wp_icl_translations
+						WHERE trid =
+							(SELECT trid
+							 FROM wp_icl_translations
+							 WHERE element_type = 'post_page'
+							 AND element_id = (SELECT option_value
+											   FROM wp_options
+											   WHERE option_name='page_on_front'
+											   LIMIT 1))
+						 made by shutdown_action_hook, do_action('shutdown'), WP_Hook->do_action, WP_Hook->apply_filters, LiteSpeed\Core->send_headers, LiteSpeed\Tag->output, LiteSpeed\Tag::_finalize, LiteSpeed\Tag::_build_type_tags, is_front_page, WP_Query->is_front_page, get_option, apply_filters('pre_option_page_on_front'), WP_Hook->apply_filters, SitePress->pre_option_page_on_front, WPML_Pre_Option_Page->get
+[10-Apr-2023 16:03:30 UTC] WordPress database error Commands out of sync; you can't run this command now for query 	SELECT element_id, language_code
+						FROM wp_icl_translations
+						WHERE trid =
+							(SELECT trid
+							 FROM wp_icl_translations
+							 WHERE element_type = 'post_page'
+							 AND element_id = (SELECT option_value
+											   FROM wp_options
+											   WHERE option_name='page_on_front'
+											   LIMIT 1))
+						 made by shutdown_action_hook, do_action('shutdown'), WP_Hook->do_action, WP_Hook->apply_filters, LiteSpeed\Core->send_headers, LiteSpeed\Tag->output, LiteSpeed\Tag::_finalize, LiteSpeed\Tag::_build_type_tags, is_front_page, WP_Query->is_front_page, get_option, apply_filters('pre_option_page_on_front'), WP_Hook->apply_filters, SitePress->pre_option_page_on_front, WPML_Pre_Option_Page->get
+[18-Apr-2023 09:57:06 UTC] WordPress database error Commands out of sync; you can't run this command now for query 	SELECT element_id, language_code
+						FROM wp_icl_translations
+						WHERE trid =
+							(SELECT trid
+							 FROM wp_icl_translations
+							 WHERE element_type = 'post_page'
+							 AND element_id = (SELECT option_value
+											   FROM wp_options
+											   WHERE option_name='page_on_front'
+											   LIMIT 1))
+						 made by shutdown_action_hook, do_action('shutdown'), WP_Hook->do_action, WP_Hook->apply_filters, LiteSpeed\Core->send_headers, LiteSpeed\Tag->output, LiteSpeed\Tag::_finalize, LiteSpeed\Tag::_build_type_tags, is_front_page, WP_Query->is_front_page, get_option, apply_filters('pre_option_page_on_front'), WP_Hook->apply_filters, SitePress->pre_option_page_on_front, WPML_Pre_Option_Page->get
+[18-Apr-2023 22:34:01 UTC] WordPress database error Commands out of sync; you can't run this command now for query 	SELECT element_id, language_code
+						FROM wp_icl_translations
+						WHERE trid =
+							(SELECT trid
+							 FROM wp_icl_translations
+							 WHERE element_type = 'post_page'
+							 AND element_id = (SELECT option_value
+											   FROM wp_options
+											   WHERE option_name='page_on_front'
+											   LIMIT 1))
+						 made by shutdown_action_hook, do_action('shutdown'), WP_Hook->do_action, WP_Hook->apply_filters, LiteSpeed\Core->send_headers, LiteSpeed\Tag->output, LiteSpeed\Tag::_finalize, LiteSpeed\Tag::_build_type_tags, is_front_page, WP_Query->is_front_page, get_option, apply_filters('pre_option_page_on_front'), WP_Hook->apply_filters, SitePress->pre_option_page_on_front, WPML_Pre_Option_Page->get

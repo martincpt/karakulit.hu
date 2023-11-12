@@ -1,0 +1,57 @@
+.wvc-row .vc_progress_bar {
+	.vc_single_bar {
+		margin-bottom: 20px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.vc_label {
+		font-weight: 700;
+		font-size: 14px;
+	}
+
+	.vc_single_bar {
+		border-radius: 0;
+		box-shadow: none !important;
+	}
+
+	.vc_bar {
+		border-radius: 0 !important;
+		background: transparent;
+	}
+
+	.vc_label_units {
+		display: block;
+		float: right;
+	}
+}
+
+.wvc_single_bar {
+	height: 8px;
+	margin-top: 10px;
+}
+
+.wvc_bar_color_filler {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.wvc-font-dark {
+	.vc_progress_bar .vc_single_bar {
+		background: rgba(0, 0, 0, 0.05);
+	}
+}
+
+.wvc-font-light {
+	.vc_progress_bar .vc_single_bar {
+		background: rgba(0, 0, 0, 0.22);
+	}
+}

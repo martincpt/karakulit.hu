@@ -1,0 +1,91 @@
+@mixin alert($color : #EDFDD3){
+	color : darken($color, 80%);
+	border: 1px solid darken($color, 45%)!important;
+	background-color: $color;
+
+	a, a:hover, strong, span, b{
+		color : darken($color, 80%)!important;
+	}
+}
+
+.wvc-notification{
+	width: 100%;
+	padding:0;
+	position: relative;
+	text-shadow:none!important;
+	line-height: 1.5;
+	font-size: 14px;
+	padding:1em 2em;
+	margin-bottom: 1em;
+	min-height: 80px;
+
+	a{
+		text-decoration: underline!important;
+		font-weight: 700;
+		opacity: 1!important;
+		border:none!important;
+	}
+
+	p{
+		margin:0;
+		margin-bottom: 14px;
+	}
+
+	.fa{
+		margin-top: 14px;
+		margin-right: 14px;
+		margin-bottom: 14px;
+
+		&:before{
+			font-size: 24px;
+		}
+
+		position: absolute;
+		top: 20px;
+		left: 28px;
+	}
+
+	.wvc-notification-close{
+		cursor: pointer;
+		position: absolute;
+		top: 6px;
+		right: 6px;
+		width: 12px;
+		height: 14px;
+		display: inline-block;
+		font-size: 100%;
+		text-decoration: none!important;
+		font-weight: 700!important;
+		line-height: 1.5;
+		font-size: 16px;
+		font-family: Helvetica, Arial, sans-serif;
+	}
+
+	&.wvc-info{
+		@include alert(#BEEFFF);
+	}
+
+	&.wvc-alert{
+		@include alert(#FFF7D6);
+	}
+
+	&.wvc-success{
+		@include alert();
+	}
+
+	&.wvc-error{
+		@include alert(#ffe6e3);
+	}
+}
+
+.wvc-notification-content{
+	padding-top: 14px;
+	line-height: 1.8;
+	
+}
+
+.wvc-notification-has-icon{
+	.wvc-notification-content{
+		padding-left: 40px;
+	}
+}

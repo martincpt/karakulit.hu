@@ -1,0 +1,26 @@
+<?php
+/**
+ * Tabs
+ *
+ * @author WolfThemes
+ * @category Core
+ * @package %PACKAGENAME%/Elements
+ * @version %VERSION%
+ */
+
+defined( 'ABSPATH' ) || exit;
+
+// Overwite icon
+vc_map_update( 'vc_tta_tabs', array( 'icon' => 'fa fa-folder' ) );
+
+// Remove params
+vc_remove_param( 'vc_tta_tabs', 'title' );
+vc_remove_param( 'vc_tta_tabs', 'style' );
+vc_remove_param( 'vc_tta_tabs', 'shape' );
+vc_remove_param( 'vc_tta_tabs', 'color' );
+vc_remove_param( 'vc_tta_tabs', 'no_fill' );
+vc_remove_param( 'vc_tta_tabs', 'spacing' );
+vc_remove_param( 'vc_tta_tabs', 'gap' );
+vc_remove_param( 'vc_tta_tabs', 'no_fill' );
+vc_remove_param( 'vc_tta_tabs', 'pagination_style' );
+vc_remove_param( 'vc_tta_tabs', 'tab_position' );

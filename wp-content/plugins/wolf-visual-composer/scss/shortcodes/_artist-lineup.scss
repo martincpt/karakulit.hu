@@ -1,0 +1,43 @@
+.wvc-artist-lineup{
+	font-size: 2em;
+	font-weight: 700;
+	//text-transform: uppercase;
+
+	&.wvc-alu-text-align-left{
+		text-align: left;
+	}
+
+	&.wvc-alu-text-align-center{
+		text-align: center;
+	}
+
+	&.wvc-alu-text-align-right{
+		text-align: right;
+	}
+
+	.wvc-alu-before-text{
+		margin-right: 8px;
+	}
+
+	ul{
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		line-height: 1!important;
+		display: inline;
+
+		li{
+			//white-space: nowrap;
+			list-style-type: none;
+			display: inline-block;
+		}
+	}
+	
+	strong{
+		font-size: 1.4em;
+	}
+
+	.wvc-alu-separator{
+		margin: 0 5px;
+	}
+}

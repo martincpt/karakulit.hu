@@ -1,0 +1,173 @@
+.wvc-column-has-il{
+	height: 100%;
+
+	.wvc-column-container{
+		height: 100%;
+	}
+
+	.wvc-column-inner{
+		display: flex;
+	}
+}
+
+.wvc-interactive-links-container{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.wvc-is-apple .wvc-interactive-links-container{
+	height:100vh;
+}
+
+.wvc-interactive-links-container{
+	height:100vh;
+}
+
+.wvc-interactive-links-bg-holder{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.wvc-interactive-links-content-holder{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+
+	&:before{
+		display:none!important;
+	}
+}
+
+.wvc-interactive-links-inner{
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.wvc-interactive-links-content{
+	display: table-cell;
+	width: 100%;
+	padding: 8%;
+	margin: 0;
+	list-style:none!important;
+	position: relative;
+	z-index: 0;
+}
+
+
+/* Display */
+.wvc-interactive-links-container-display-block{
+	.wvc-interactive-link-item{
+		width: 100%;
+		display: block!important;
+	}
+}
+
+.wvc-interactive-links-container-display-inline-block{
+	.wvc-interactive-link-item{
+		display: inline-block;
+		margin: 0 22px;
+
+		&:first-child{
+			//margin-left: 0;
+		}
+
+		&:last-child{
+			//margin-right: 0;
+		}
+	}
+}
+
+
+/* Text align */
+.wvc-interactive-links-container-align-left{
+	.wvc-interactive-links-content{
+		text-align: left;
+	}
+}
+
+.wvc-interactive-links-container-align-center{
+	.wvc-interactive-links-content{
+		text-align: center;
+	}
+}
+
+.wvc-interactive-links-container-align-right{
+	.wvc-interactive-links-content{
+		text-align: right;
+	}
+}
+
+/* V Align */
+.wvc-interactive-links-container-valign-top{
+	.wvc-interactive-links-content{
+		vertical-align: top;
+	}
+}
+
+.wvc-interactive-links-container-valign-middle{
+	.wvc-interactive-links-content{
+		vertical-align: middle;
+	}
+}
+
+.wvc-interactive-links-container-valign-bottom{
+	.wvc-interactive-links-content{
+		vertical-align: bottom;
+	}
+}
+
+/* Item */
+.wvc-interactive-link-item a{
+	display: inline-block;
+	list-style-type:none!important;
+}
+
+/* Animation */
+.wvc-ils-bg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	transition: all .4s ease;
+	opacity: 0;
+}
+
+.wvc-ils-bg-active{
+	opacity: 1;
+}
+
+@media screen and (max-width: 500px) {
+
+}
+
+@media screen and (max-width: 800px) {
+	.wvc-interactive-links{
+		font-size: 28px!important;
+	}
+
+	.wvc-interactive-links-container-display-inline-block .wvc-interactive-link-item {
+		margin: 0 14px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.wvc-interactive-links{
+		font-size: 32px!important;
+	}
+
+	.wvc-interactive-links-container-display-inline-block .wvc-interactive-link-item {
+		margin: 0 14px;
+	}
+}

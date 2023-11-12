@@ -1,0 +1,41 @@
+// transparent
+.wvc-border-color-transparent{
+	border-color:transparent;
+}
+
+// green
+.wvc-border-color-gradient-color-105898{
+	border-image:$gradient-color-105898;
+	border-image-slice: 1;
+}
+
+// green circle
+.wvc-border-color-gradient-color-111420{
+	border-image:$gradient-color-111420;
+	border-image:$webkit-gradient-color-111420;
+	border-image-slice: 1;
+}
+
+// red salient
+.wvc-border-color-gradient-color-3452ff{
+	border-image:$gradient-color-3452ff;
+	border-image-slice: 1;
+}
+
+// red uncode
+.wvc-border-color-gradient-color-588694{
+	border-image:$gradient-color-588694;
+	border-image-slice: 1;
+}
+
+// orange
+.wvc-border-color-gradient-color-470604{
+	border-image:$gradient-color-470604;
+	border-image-slice: 1;
+}
+
+// violet instagram
+.wvc-border-color-gradient-color-b900b4{
+	border-image:$gradient-color-b900b4;
+	border-image-slice: 1;
+}

@@ -1,0 +1,85 @@
+/* Flexslider */
+.flexslider .flex-direction-nav{
+
+	a{
+		background: none;
+		font-size: 0;
+		height: 70px;
+		transform:translate3d(0,-50%,0);
+		margin-top: 0;
+		text-shadow:none;
+
+		&:before{
+			@include icon();
+			box-shadow: none;
+			font-family: linea-arrows-10!important;
+			content: "\e03f";
+			color: #fff;
+			font-size: 38px;
+		}
+	}
+
+	a.flex-prev{
+		&:before{
+			content: "\e03f";
+		}
+	}
+
+	a.flex-next{
+		&:before{
+			content: "\e04b";
+		}
+	}
+}
+
+/* Flickity */
+.flickity-prev-next-button{
+	background: none!important;
+	font-size: 0;
+	height: 70px;
+	//margin-top: -35px;
+
+	svg{
+		display: none;
+	}
+
+	&:before{
+		@include icon();
+		font-family: linea-arrows-10!important;
+		content: "\e03f";
+		//color: #fff;
+		font-size: 38px;
+	}
+
+	&.previous{
+		&:before{
+			content: "\e03f";
+		}
+	}
+
+	&.next{
+		&:before{
+			content: "\e04b";
+		}
+	}
+}
+
+.wvc-slider-nav-font-tone-dark{
+	.flexslider .flex-direction-nav a:before{
+		color: #333;
+	}
+}
+
+
+/* Image gallery carousel */
+.wvc-carousel-nav-arrows-tone-light{
+	.flickity-prev-next-button:before{
+		color: #fff;
+	}
+}
+
+.wvc-carousel-nav-arrows-tone-dark{
+	.flickity-prev-next-button:before{
+		color: #333;
+	}
+}

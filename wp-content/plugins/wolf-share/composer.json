@@ -1,0 +1,16 @@
+{
+	"name": "wolfthemes/wolf-share",
+	"description": "A WordPress plugin to add share buttons to your post.",
+	"type": "wordpress-plugin",
+	"homepage": "https://github.com/wolfthemes/wolf-share",
+	"authors": [
+		{
+			"name": "WolfThemes",
+			"email": "contact@wolfthemes.com",
+			"homepage": "https://wolfthemes.com"
+		}
+	],
+	"require": {
+		"php": ">=5.6"
+	}
+}

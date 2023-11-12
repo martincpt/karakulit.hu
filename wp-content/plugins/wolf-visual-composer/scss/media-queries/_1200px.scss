@@ -1,0 +1,64 @@
+/* Slid caption */
+.wvc-slide-caption{
+	padding: 114px;
+}
+
+.wvc-slide-caption-valign-bottom{
+	.wvc-slide-caption{
+		padding-bottom: 50px;
+	}
+}
+
+.wvc-slide-caption-valign-top{
+	.wvc-slide-caption{
+		padding-top: 50px;
+	}
+}
+
+.wvc-show-tablet{
+	display: none!important;
+}
+
+/* Mosaic gallery */
+.wvc-mosaic-block{
+	width:49.999%;
+	float:left;
+}
+
+/* Pricing table */
+/*.wvc-pricing-tables-2-cols{
+	width: 60%;
+	margin: 0 auto;
+}
+
+.wvc-pricing-tables-3-cols{
+	width: 85%;
+	margin: 0 auto;
+}
+
+.wvc-pricing-tables-4-cols{
+	margin: 0 auto;
+}*/
+
+/* Counter */
+.wvc-counter{
+	font-size: 72px;
+}
+
+.wvc-counter-text{
+	font-size: 16px;
+}
+
+/* Countdown */
+.wvc-countdown-container{
+	font-size: 54px;
+
+	.countdown-period {
+		//font-size: 24px!important;
+	}
+}
+
+.wvc-slide-text-type-big-text{
+	font-size: 24px;
+	padding: 0;
+}

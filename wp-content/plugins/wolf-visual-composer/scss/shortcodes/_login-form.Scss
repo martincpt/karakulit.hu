@@ -1,0 +1,22 @@
+.wvc-login-form-container{
+	margin: 0 auto;
+	max-width: 600px;
+	width: 100%;
+
+	border:1px solid rgba(0,0,0,0.05);
+
+	.login-remember{
+		input[type="checkbox"] {
+			height: auto;
+		}
+	}
+
+	.login-submit{
+		text-align: right;
+	}
+
+}
+
+.wvc-login-form-inner{
+	padding: 40px 50px;
+}

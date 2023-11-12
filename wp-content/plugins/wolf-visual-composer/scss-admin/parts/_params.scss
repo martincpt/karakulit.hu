@@ -1,0 +1,145 @@
+// Hide some design controls
+.vc_css-editor .vc_settings>* {
+    display: none!important;
+}
+.vc_css-editor .vc_settings>:last-child {
+	margin-top: 0;
+	display: block!important;
+}
+
+// font
+.wvc-font-family-preview{
+	margin-top: 8px;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.wvc-images-set .wvc-image{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	&:after, &:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; }
+
+
+	float: left;
+	width: 25%;
+	max-width: 150px;
+	cursor: move;
+	display:block;
+	padding:3px;
+	position: relative;
+
+	img{
+		width: 100%;
+		display: block;
+		vertical-align: bottom;
+	}
+
+	.wvc-remove-img{
+		position: absolute;
+		color: #FFF;
+		width: 24px;
+		height: 24px;
+		cursor: pointer;
+		z-index: 5;
+		top: 3px;
+		right: 0;
+		font-weight: normal;
+
+		&:before{
+			content:'\00D7';
+			font-size: 24px;
+			color: #FFF!important;
+		}
+	}
+}
+
+.wvc_colored-dropdown{
+	color: #444;
+
+	// green
+	.gradient-color-105898{
+		background:$gradient-color-105898!important;
+		color: #fff;
+	}
+
+	// green cirlce
+	.gradient-color-111420{
+		background:$gradient-color-111420!important;
+		color: #fff;
+	}
+
+	// red salient
+	.gradient-color-3452ff{
+		background:$gradient-color-3452ff!important;
+		color: #fff;
+	}
+
+	// red uncode
+	.gradient-color-588694{
+		background:$gradient-color-588694!important;
+		color: #fff;
+	}
+
+	.black{
+		background-color:$black!important;
+		color: #fff;
+	}
+	.white{
+		background-color:$white!important;
+		color: #444!important;
+	}
+	.lightergrey{
+		background-color:$lightergrey!important;
+		color: #444!important;
+	}
+
+	.darkgrey{
+		background-color:$darkgrey!important;
+		color: #fff;
+	}
+	.orange{
+		background-color:$orange!important;
+		color: #fff;
+	}
+	.green{
+		background-color:$green!important;
+		color: #fff;
+	}
+	.turquoise{
+		background-color:$turquoise!important;
+		color: #fff;
+	}
+	.violet{
+		background-color:$violet!important;
+		color: #fff;
+	}
+	.pink{
+		background-color:$pink!important;
+		color: #fff;
+	}
+	.greyblue{
+		background-color:$greyblue!important;
+		color: #fff;
+	}
+	.red{
+		background-color:$red!important;
+		color: #fff;
+	}
+	.yellow{
+		background-color:$yellow!important;
+		color: #fff;
+	}
+	.blue{
+		background-color:$blue!important;
+		color: #fff;
+	}
+
+	.custom{
+		background:#f7f7f7;
+		color: #444;
+	}
+}

@@ -1,0 +1,29 @@
+// golden ratio
+$golden : 1.618;
+$cols : 12;
+$width: 100%;
+$gutter : $golden * 1%;
+$wrapper : $width + 2 * $gutter;
+
+.wvc-col{
+	float: left;
+	position: relative;
+	margin-left: $gutter;
+	margin-right: $gutter;
+	margin-bottom: 0;
+	&:empty{
+		height: 1px; // fill empty column
+	}
+}
+
+// admin
+@for $i from 1 through $cols {
+	.wvc-col-#{$i}{
+		float: left;
+		position: relative;
+		margin-left: $gutter;
+		margin-right: $gutter;
+		margin-bottom: 0;
+		width: ( $i * $wrapper / $cols - 2 * $gutter  ) ;
+	}
+}

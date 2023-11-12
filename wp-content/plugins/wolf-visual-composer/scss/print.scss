@@ -1,0 +1,67 @@
+/* border box everything */
+* {
+	box-sizing: border-box;
+	
+	&:after, &:before {
+		box-sizing: border-box;
+	}
+}
+
+body{
+	margin: 0;
+	font-size: 14px;
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+	display: block;
+}
+
+ul,
+ol{
+	padding: 0!important;
+	margin: 0;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	margin-bottom: 10px;
+}
+
+img.wp-smiley, img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+
+.wvc-printable-element{
+	margin-top: 50px;
+}
+
+.wvc-display-print{
+	display: block;
+	height: auto;
+	visibility: visible;
+}
+
+@import "shortcodes/workout_program";
+@import "shortcodes/meal";
+@import "shortcodes/recipe";

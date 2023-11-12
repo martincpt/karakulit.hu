@@ -1,0 +1,14 @@
+{
+	"version": "1.3.0",
+	"updated": "2021-07-17",
+	"slug": "wolf-videos",
+	"name": "Videos",
+	"packagename": "WolfVideos",
+	"created": "2013-11-19",
+	"createdNice": "19th november 2013",
+	"description": "A video gallery post type for your site.",
+	"link": "https://github.com/wolfthemes/wolf-videos/",
+	"shortlink": "https://wlfthm.es/videos",
+	"author": "WolfThemes",
+	"authorURI": "https://wolfthemes.com"
+}

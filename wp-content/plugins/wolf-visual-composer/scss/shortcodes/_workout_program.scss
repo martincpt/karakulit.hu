@@ -1,0 +1,160 @@
+.wvc-workout-program{
+	width: 100%;
+	border:1px solid rgba(0,0,0,0.05);
+
+	.wvc-workout-program-cell:last-of-type{
+		border-bottom:none;
+	}
+}
+
+.wvc-workout-program-head{
+	position: relative;
+}
+
+.wvc-workout-program-title{
+	font-size: 1.6em;
+}
+
+.wvc-workout-program-cell{
+	padding: 20px 33px;
+	border-bottom:1px solid rgba(0,0,0,0.05);
+}
+
+.wvc-workout-program-head{
+	padding: 33px;
+}
+
+.wvc-wpe-content{
+	position: relative;
+	padding-right: 8px;
+	max-width: 600px;
+}
+
+.wvc-wpe-linked .wvc-wpe-name{
+
+}
+
+.wvc-wpe-link-mask{
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.wvc-wpe-numbers{
+	margin-right: 8px;
+}
+
+.wvc-wpe-name{
+	font-weight: 700;
+}
+
+.wvc-wpe-comment{
+	font-style: italic;
+	font-size: 0.9em;
+	opacity: .80;
+}
+
+.wvc-workout-program-exercice{
+	display: flex;
+	align-items:center;
+}
+
+.wvc-wpe-media{
+	text-align: right;
+	flex:1;
+}
+
+.wvc-wpe-thumbnail{
+	width: 100px;
+	//padding: 5px;
+	height: auto;
+
+}
+
+.wvc-wpe-comment{
+	margin-top: 10px;
+}
+
+.wvc-wpe-link{
+	display: inline-block;
+	position: relative;
+	transition:opacity .2s ease;
+	margin-left: 5px;
+
+	&:hover{
+		opacity: .88;
+	}
+
+	&:before{
+		content:'';
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background:rgba(0,0,0,0.2);
+	}
+
+	&:after{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform:translate3d(-50%,-50%,0);
+		font-family: FontAwesome;
+		color: white;
+	}
+
+	&.wvc-wpe-video-link{
+		&:after{
+			content: "\f04b";
+		}
+	}
+
+	&.wvc-wpe-gallery-link{
+		&:after{
+			content: "\f03e";
+		}
+	}
+}
+
+.wvc-wpe-print-button{
+	position: absolute;
+	right: 33px;
+	top: 50%;
+	transform:translate3d(0,-50%,0);
+}
+
+.wvc-is-mobile{
+	.wvc-wpe-print-button{
+		display: none;
+	}
+}
+
+.wvc-print-button-text{
+	&:before{
+		font-family: FontAwesome;
+		display: inline-block;
+		content: "\f02f";
+		margin-right: 5px;
+	}
+}
+
+.wvc-workout-program{
+	//&.wvc-el-800,
+	&.wvc-el-500,
+	&.wvc-el-380{
+
+		.wvc-wpe-print-button{
+			display: none;
+		}
+
+		.wvc-wpe-media{
+			display: none;
+		}
+
+	}
+}

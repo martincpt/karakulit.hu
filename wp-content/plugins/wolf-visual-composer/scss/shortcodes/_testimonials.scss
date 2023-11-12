@@ -1,0 +1,127 @@
+.wvc-testimonials-container {
+	z-index: 5;
+	position: relative;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wvc-testimonal-slide {
+	width: 100%;
+	padding-bottom: 15px;
+}
+
+.wvc-testimonial-container {
+	//max-width: 800px;
+	//margin: 0 auto;
+	padding: 0 2em;
+}
+
+.wvc-testimonials-transition-fade {
+	.flickity-slider {
+		transform: none !important;
+	}
+
+	.wvc-testimonal-slide {
+		left: 0 !important;
+		opacity: 0;
+		transition: opacity 0.88s ease-in-out;
+		z-index: -1;
+	}
+
+	.wvc-testimonal-slide.is-selected {
+		opacity: 1;
+		z-index: 0;
+	}
+}
+
+blockquote.wvc-testimonial-content {
+	padding: 0 !important;
+	margin: 0 !important;
+	border: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	display: block;
+	width: 100%;
+	font-size: 14px;
+	text-align: center;
+	padding: 0 80px !important;
+
+	&:before,
+	&:after {
+		display: none;
+	}
+}
+
+.wvc-testimonials-text-align-left {
+	blockquote.wvc-testimonial-content {
+		text-align: left;
+		padding-left: 0 !important;
+	}
+	.wvc-testimonial-avatar {
+		margin-left: 0;
+	}
+	.flickity-page-dots {
+		text-align: left;
+	}
+
+	.flickity-prev-next-button.previous {
+		left: -70px;
+	}
+
+	.flickity-page-dots {
+		padding-left: 0;
+	}
+}
+
+.wvc-testimonials-text-align-right {
+	blockquote.wvc-testimonial-content {
+		text-align: right;
+		padding-right: 0 !important;
+	}
+	.wvc-testimonial-avatar {
+		margin-right: 0;
+	}
+	.flickity-page-dots {
+		text-align: right;
+	}
+
+	.flickity-prev-next-button.previous {
+		right: -70px;
+	}
+
+	.flickity-page-dots {
+		padding-right: 0;
+	}
+}
+
+cite.wvc-testimonial-cite {
+	margin-top: 20px;
+	font-weight: 400;
+	font-size: 13px;
+	display: block;
+	width: 100%;
+}
+
+.wvc-testimonial-avatar {
+	display: block;
+	width: 80px;
+	margin: 0 auto 30px;
+
+	img {
+		border-radius: 80px;
+		width: 80px;
+		height: 80px;
+	}
+}
+
+.wvc-testimonials-container-has-nav-bullets {
+	padding-bottom: 35px;
+}
+
+.wvc-testimonal-container {
+	.star-rating {
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+}

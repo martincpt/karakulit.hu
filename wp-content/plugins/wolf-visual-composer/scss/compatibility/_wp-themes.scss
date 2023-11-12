@@ -1,0 +1,139 @@
+.twentysixteen{
+	.wvc-mailchimp-form-container.wvc-mailchimp-has-bg{
+		.wvc-mailchimp-submit{
+			background: none;
+			color: #fff;
+			border:1px solid #fff;
+
+			&:hover{
+				background: #fff;
+				color: #333;
+			}
+		}
+	}
+}
+
+.wolf-visual-composer {
+
+	/**
+	 * Twentysixteen
+	 */
+	&.twentyseventeen{
+		.site-content{
+			padding: 0!important;
+
+			.wrap{
+				max-width: none;
+				padding: 0;
+				margin: 0;
+			}
+
+			.entry-header{
+				display: none;
+			}
+
+			.entry-content{
+				width: 100%!important;
+				float: none!important;
+			}
+		}
+
+		.site-content-contain{
+			background:none;
+		}
+
+		.site-footer{
+			margin-top: 0!important;
+		}
+	}
+
+	/**
+	 * Twentysixteen
+	 */
+	&.twentysixteen{
+
+		.site {
+			margin:0;
+			overflow: hidden;
+			background: none;
+		}
+
+		.site-inner{
+			max-width: none!important;
+			overflow: hidden;
+		}
+
+		.site-header{
+			background: #FFF;
+			margin: 0 auto;
+			max-width: none;
+		}
+
+		.header-image img{
+			width:100%;
+		}
+
+		.header-image,
+		.site-header-main{
+			max-width: 1320px;
+			margin: 0 auto;
+		}
+
+		.site-content{
+			padding: 0!important;
+			margin: 0!important;
+			max-width: none!important;
+			width: 100%!important;
+		}
+
+		.site-main{
+			margin-bottom: 0;
+		}
+
+		.content-area{
+			float: none;
+			width: 100%;
+			margin-right: 0;
+		}
+
+		.site-footer{
+			max-width: 1320px;
+			margin: 0 auto;
+			padding: 3.5em 4.5455% 3.5em;
+			background: #FFF;
+			max-width: none;
+		}
+
+		.wvc-font-light{
+			input[type="text"],
+			input[type="email"],
+			input[type="search"],
+			input[type="password"],
+			input[type="tel"],
+			input[type="url"],
+			input[name="post_password"],
+			select,
+			textarea{
+				color: #333!important;
+			}
+
+			blockquote cite, blockquote small{
+				color: #FFF;
+			}
+		}
+
+		.wvc-font-dark{
+			blockquote cite, blockquote small{
+				color: #FFF;
+			}
+		}
+	}
+
+} // end wolf-visual-composer class
+
+@media screen and (min-width: 44.375em) {
+	.wolf-visual-composer.twentysixteen {
+		margin:0;
+		padding: 21px;
+	}
+}

@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'monument-extended-ultrabold';
+	src: url('../lib/fonts/monumentextended/monumentextended-ultrabold.otf') format('woff'),
+		url('../lib/fonts/monumentextended/monumentextended-ultrabold.otf') format('opentype'),
+		url('../lib/fonts/monumentextended/monumentextended-ultrabold.otf') format('truetype');
+}
+
+@font-face {
+	font-family: 'monument-extended-regular';
+	src: url('../lib/fonts/monumentextended/monumentextended-regular.otf') format('woff'),
+		url('../lib/monumentextended/monumentextended-regular.otf') format('opentype'),
+		url('../lib/fnts/monumentextended/monumentextended-regular.otf') format('truetype');
+}

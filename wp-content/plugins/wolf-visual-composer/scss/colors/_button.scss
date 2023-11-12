@@ -1,0 +1,117 @@
+// Green
+.wvc-button-background-color-gradient-color-105898{
+	background:$gradient-color-105898;
+	border-image: $gradient-color-105898;
+	border-image-slice: 1;
+
+	.wvc-button-background-fill{
+		background:$gradient-color-105898;
+	}
+
+	.fa,
+	span{
+		transition:all .3s ease;
+		background:$gradient-color-105898;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+// Green circle
+.wvc-button-background-color-gradient-color-111420{
+	background:$gradient-color-111420;
+	background:$webkit-gradient-color-111420;
+	border-image: $gradient-color-111420;
+	border-image: $webkit-gradient-color-111420;
+	border-image-slice: 1;
+
+	.wvc-button-background-fill{
+		background:$gradient-color-111420;
+		background:$webkit-gradient-color-111420;
+	}
+
+	.fa,
+	span{
+		transition:all .3s ease;
+		background:$gradient-color-111420;
+		background:$webkit-gradient-color-111420;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+// red (salient)
+.wvc-button-background-color-gradient-color-3452ff{
+	background:$gradient-color-3452ff;
+	border-image: $gradient-color-3452ff;
+	border-image-slice: 1;
+
+	.wvc-button-background-fill{
+		background:$gradient-color-3452ff;
+	}
+
+	.fa,
+	span{
+		transition:all .3s ease;
+		background:$gradient-color-3452ff;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+// red (uncode)
+.wvc-button-background-color-gradient-color-588694{
+	background:$gradient-color-588694;
+	border-image: $gradient-color-588694;
+	border-image-slice: 1;
+
+	.wvc-button-background-fill{
+		background:$gradient-color-588694;
+	}
+
+	.fa,
+	span{
+		transition:all .3s ease;
+		background:$gradient-color-588694;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+// Orange
+.wvc-button-background-color-gradient-color-470604{
+	background:$gradient-color-470604;
+	border-image: $gradient-color-470604;
+	border-image-slice: 1;
+
+	.wvc-button-background-fill{
+		background:$gradient-color-470604;
+	}
+
+	.fa,
+	span{
+		transition:all .3s ease;
+		background:$gradient-color-470604;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+// Violet
+.wvc-button-background-color-gradient-color-b900b4{
+	background:$gradient-color-b900b4;
+	border-image: $gradient-color-b900b4;
+	border-image-slice: 1;
+
+	.wvc-button-background-fill{
+		background:$gradient-color-b900b4;
+	}
+
+	.fa,
+	span{
+		transition:all .3s ease;
+		background:$gradient-color-b900b4;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}

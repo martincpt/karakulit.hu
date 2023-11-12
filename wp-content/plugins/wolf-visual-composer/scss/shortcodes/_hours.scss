@@ -1,0 +1,43 @@
+.wvc-hours{
+	//font-size: 1.4em;
+	margin-bottom: 14px;
+}
+
+.wvc-h-container{
+	display: table;
+	width: 100%;
+}
+
+.wvc-h-day,
+.wvc-h-line,
+.wvc-h-hours{
+	display: table-cell;
+	width: auto;
+}
+
+.wvc-h-day{
+	width: 1%;
+	white-space: nowrap;
+	text-align: left;
+}
+
+.wvc-h-hours{
+	text-align: right;
+	width: 1%;
+	white-space: nowrap;
+}
+
+.wvc-h-line{
+	padding-right: 6px;
+	padding-left: 6px;
+}
+
+.wvc-h-line{
+	width: 98%;
+	height: 3px;
+}
+
+.wvc-h-line-content{
+	display: block;
+	border-bottom: 2px dotted #ddd;
+}

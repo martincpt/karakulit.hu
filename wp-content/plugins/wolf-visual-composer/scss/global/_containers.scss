@@ -1,0 +1,21 @@
+body.wolf-visual-composer{
+	p:empty{
+		display: none;
+	}
+}
+
+.wvc-element{
+	margin-bottom: 35px;
+}
+
+.wvc-column-wrapper{
+	.wvc-element:last-of-type,
+	.wvc-element:only-child{
+		margin-bottom: 0;
+	}
+
+	.wvc-hours:last-of-type,
+	.wvc-hours:only-child{
+		margin-bottom: 0;
+	}
+}

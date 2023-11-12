@@ -1,0 +1,22 @@
+.wvc-text-block{
+
+	p{
+		&:first-of-type{
+			margin-top:0;
+		}
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	img,
+	iframe,
+	embed,
+	object,
+	video{
+		max-width: 100%;
+	}
+
+	//margin-bottom: 35px;
+}

@@ -1,0 +1,18 @@
+{
+	"name": "wolfthemes/wolf-vc-content-block",
+	"description": "A WordPress plugin to create WPBakery Page Builder blocks.",
+	"type": "wordpress-plugin",
+	"homepage": "https://github.com/wolfthemes/wolf-vc-content-block",
+	"authors": [
+		{
+			"name": "WolfThemes",
+			"email": "contact@wolfthemes.com",
+			"homepage": "https://wolfthemes.com"
+		}
+	],
+	"require": {
+		"squizlabs/php_codesniffer": "3.*",
+		"wp-coding-standards/wpcs": "^2.3",
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.0"
+	}
+}

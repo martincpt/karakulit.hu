@@ -1,0 +1,145 @@
+@import "font";
+
+.wolf-share-buttons-container{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	display:table;
+	width: 100%;
+
+	&:first-child{
+		margin-top: 0;
+	}
+}
+
+.wolf-share-button{
+	display: table-cell;
+}
+
+.wolf-share-link-text,
+.wolf-share-count-number{
+	font-family: "Open Sans", sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+	margin-left: 6px;
+	letter-spacing: 2px;
+	display: none;
+}
+
+.wolf-share-count-number{
+	display: inline;
+	margin-left: 0;
+	top: -2px;
+}
+
+.wolf-share-button a,
+.wolf-share-count-number{
+	position: relative;
+	display: inline-block;
+	background: #0d0d0d;
+	color: #FFF!important;
+	height: 44px;
+	min-width: 44px;
+	text-align: center;
+	line-height: 44px;
+	padding: 0 20px;
+	margin-right: -1px; // fix space
+	width: 100%;
+}
+
+.wolf-share-button a{
+	opacity: 1;
+	transition: opacity .4s ease;
+
+	&:hover{
+		opacity: 0.88;
+	}
+}
+
+.wolf-share-button-count{
+	//display: inline;
+	//top: -1px;
+	position: relative;
+	width: 44px;
+
+	.wolf-share-count{
+		margin-right: 6px;
+	}
+
+	.wolf-share-link-text{
+		margin: 0;
+	}
+}
+
+.wolf-share-button-facebook a{
+	background: #4267B2;
+}
+
+.wolf-share-button-twitter a{
+	background: #1DA1F2;
+}
+
+.wolf-share-button-reddit a{
+	background: #C7DEF7;
+}
+
+.wolf-share-button-pinterest a{
+	background: #CB2027;
+}
+
+.wolf-share-button-linkedin a{
+	background: #007BB6;
+}
+
+.wolf-share-button-google a{
+	background: #d64937;
+}
+
+.wolf-share-button-tumblr a{
+	background: #2C4762;
+}
+
+.wolf-share-button-stumbleupon a{
+	background: #EB4923;
+}
+
+.wolf-share-button-email a{
+	background: #f6f6f6;
+	color: #0d0d0d!important;
+}
+
+/* Twenty Seventeen */
+body.twentyseventeen{
+	.wolf-share-button a{
+		box-shadow:none!important;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+
+	body:not(.twentyseventeen){
+		.wolf-share-buttons-container{
+			display: block;
+		}
+
+		.wolf-share-button{
+			//display: inline-block;
+		}
+
+		.wolf-share-button a,
+		.wolf-share-count-number{
+			width: auto;
+		}
+
+		.wolf-share-count-number{
+			//top: -1px;
+		}
+
+		.wolf-share-link-facebook,
+		.wolf-share-link-twitter{
+			.wolf-share-link-text{
+				display: inline;
+			}
+		}
+	}
+}

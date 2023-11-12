@@ -1,0 +1,289 @@
+.wvc-img{
+	display: block;
+	backface-visibility: hidden;
+}
+
+/* Zoom in */
+.wvc-img-hover-effect-zoomin{
+	overflow: hidden;
+
+	img{
+		transition:transform .3s ease;
+		transform:scale(1);
+	}
+
+	&:hover img{
+		transform:scale(1.1);
+	}
+}
+
+/* Zoom out */
+.wvc-img-hover-effect-zoomout{
+	overflow: hidden;
+
+	img{
+		transition:transform .3s ease;
+		transform:scale(1.1);
+	}
+
+	&:hover img{
+		transform:scale(1);
+	}
+}
+
+/* Move */
+.wvc-img-hover-effect-move-right{
+	overflow: hidden;
+
+	img{
+		transition:transform .3s ease;
+		transform:scale(1.1) translateX(0);
+	}
+
+	&:hover img{
+		transform:scale(1.1) translateX(3%);
+	}
+}
+
+.wvc-img-hover-effect-move-left{
+	overflow: hidden;
+
+	img{
+		transition:transform .3s ease;
+		transform:scale(1.1) translateX(0);
+	}
+
+	&:hover img{
+		transform:scale(1.1) translateX(-3%);
+	}
+}
+
+.wvc-img-hover-effect-move-up{
+	overflow: hidden;
+
+	img{
+		transition:transform .3s ease;
+		transform:scale(1.1) translateY(0);
+	}
+
+	&:hover img{
+		transform:scale(1.1) translateY(-3%);
+	}
+}
+
+.wvc-img-hover-effect-move-down{
+	overflow: hidden;
+
+	img{
+		transition:transform .3s ease;
+		transform:scale(1.1) translateY(0);
+	}
+
+	&:hover img{
+		transform:scale(1.1) translateY(-3%);
+	}
+}
+
+/* Up */
+.wvc-img-hover-effect-up{
+	transition:transform .3s ease;
+
+	&:hover{
+		transform:translateY(-.5em);
+	}
+}
+
+/* Opacity */
+.wvc-img-hover-effect-opacity{
+
+	img{
+		transition:opacity .3s ease;
+	}
+
+	&:hover img{
+		opacity: .66!important;
+	}
+}
+
+/* Opacity */
+.wvc-img-hover-effect-opacity-reverse{
+
+	img{
+		opacity: .66;
+		transition:opacity .3s ease;
+	}
+
+	&:hover img{
+		opacity: 1!important;
+	}
+}
+
+/* Greyscale */
+.wvc-img-hover-effect-greyscale{
+	img{
+		transition:filter .3s ease;
+		@include greyscale();
+	}
+
+	&:hover img{
+		@include no-greyscale();
+	}
+}
+
+/* To Greyscale */
+.wvc-img-hover-effect-to-greyscale{
+	img{
+		transition:filter .3s ease;
+		@include no-greyscale();
+	}
+
+	&:hover img{
+		@include greyscale();
+	}
+}
+
+/* Image Overlay hover effect */
+
+.wvc-single-image-overlay-true{
+
+	.wvc-si-img-inner{
+		overflow: hidden;
+		display: block;
+	}
+	
+	/* Zoom in */
+	&.wvc-single-image-hover-effect-zoomin{
+		overflow: hidden;
+
+		img{
+			transition:transform .3s ease;
+			transform:scale(1);
+		}
+
+		&:hover img{
+			transform:scale(1.1);
+		}
+	}
+
+	/* Zoom out */
+	&.wvc-single-image-hover-effect-zoomout{
+
+		img{
+			transition:transform .3s ease;
+			transform:scale(1.1);
+		}
+
+		&:hover{
+			img{
+				transition:transform .3s ease;
+				transform:scale(1);
+			}
+		}
+	}
+
+	/* Move */
+	&.wvc-single-image-hover-effect-move-left{
+
+		img{
+			transition:transform .3s ease;
+			transform:scale(1.1) translateX(0);
+		}
+
+		&:hover{
+			img{
+				transition:transform .3s ease;
+				transform:scale(1.1) translateX(-3%);
+			}
+		}
+	}
+
+	&.wvc-single-image-hover-effect-move-right{
+
+		img{
+			transition:transform .3s ease;
+			transform:scale(1.1) translateX(0);
+		}
+
+		&:hover{
+			img{
+				transition:transform .3s ease;
+				transform:scale(1.1) translateX(3%);
+			}
+		}
+	}
+
+	&.wvc-single-image-hover-effect-move-up{
+
+		img{
+			transition:transform .3s ease;
+			transform:scale(1.1) translateY(0);
+		}
+
+		&:hover{
+			img{
+				transition:transform .3s ease;
+				transform:scale(1.1) translateY(-3%);
+			}
+		}
+	}
+
+	&.wvc-single-image-hover-effect-move-down{
+
+		img{
+			transition:transform .3s ease;
+			transform:scale(1.1) translateY(0);
+		}
+
+		&:hover{
+			img{
+				transition:transform .3s ease;
+				transform:scale(1.1) translateY(3%);
+			}
+		}
+	}
+
+	/* Up */
+	&.wvc-single-image-hover-effect-up{
+		transition:transform .3s ease;
+
+		&:hover{
+			transform:translateY(-.5em);
+		}
+	}
+
+	/* Opacity */
+	&.wvc-single-image-hover-effect-opacity{
+
+		img{
+			transition:opacity .3s ease;
+		}
+
+		&:hover img{
+			opacity: .66!important;
+		}
+	}
+
+	/* Greyscale */
+	&.wvc-single-image-hover-effect-greyscale{
+		img{
+			transition:filter .3s ease;
+			@include greyscale();
+		}
+
+		&:hover img{
+			@include no-greyscale();
+		}
+	}
+
+	/* To Greyscale */
+	&.wvc-single-image-hover-effect-to-greyscale{
+		img{
+			transition:filter .3s ease;
+			@include no-greyscale();
+		}
+
+		&:hover img{
+			@include greyscale();
+		}
+	}
+}

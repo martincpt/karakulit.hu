@@ -1,0 +1,229 @@
+.wvc-column-has-io{
+	height: 100%;
+
+	.wvc-column-container{
+		height: 100%;
+	}
+
+	.wvc-column-inner{
+		display: flex;
+	}
+}
+
+.wvc-io-open{
+	overflow: hidden;
+}
+
+.wvc-interactive-overlays-container{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.wvc-is-apple .wvc-interactive-overlays-container{
+	height:100vh;
+}
+
+.wvc-interactive-overlays-container{
+	height:100vh;
+}
+
+.wvc-interactive-overlays-image-holder{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.wvc-interactive-overlays-content-holder{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.wvc-interactive-overlays-inner{
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.wvc-interactive-overlays-content{
+	display: table-cell;
+	width: 100%;
+	padding: 8%;
+	margin: 0;
+	list-style:none!important;
+	position: relative;
+	z-index: 0;
+}
+
+/* Display */
+.wvc-interactive-overlays-container-display-block{
+	.wvc-interactive-overlay-item{
+		width: 100%;
+		display: block;
+	}
+}
+
+.wvc-interactive-overlays-container-display-inline-block{
+	.wvc-interactive-overlay-item{
+		display: inline-block;
+		margin: 0 22px;
+
+		&:first-child{
+			//margin-left: 0;
+		}
+
+		&:last-child{
+			//margin-right: 0;
+		}
+	}
+}
+
+
+/* Text align */
+.wvc-interactive-overlays-container-align-left{
+	.wvc-interactive-overlays-content{
+		text-align: left;
+	}
+}
+
+.wvc-interactive-overlays-container-align-center{
+	.wvc-interactive-overlays-content{
+		text-align: center;
+	}
+}
+
+.wvc-interactive-overlays-container-align-right{
+	.wvc-interactive-overlays-content{
+		text-align: right;
+	}
+}
+
+/* V Align */
+.wvc-interactive-overlays-container-valign-top{
+	.wvc-interactive-overlays-content{
+		vertical-align: top;
+	}
+}
+
+.wvc-interactive-overlays-container-valign-middle{
+	.wvc-interactive-overlays-content{
+		vertical-align: middle;
+	}
+}
+
+.wvc-interactive-overlays-container-valign-bottom{
+	.wvc-interactive-overlays-content{
+		vertical-align: bottom;
+	}
+}
+
+/* Item */
+.wvc-interactive-overlay-item a{
+	display: inline-block;
+	list-style-type:none!important;
+}
+
+/* Animation */
+.wvc-io-bg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	transition: all .4s ease;
+	opacity: 0;
+}
+
+.wvc-io-bg-active{
+	opacity: 1;
+}
+
+.wvc-io-item-content{
+	background:rgba(0,0,0,.95);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 999999;
+	width: 100%;
+	height: 100vh;
+	opacity: 0;
+	z-index: -200;
+	overflow-y: auto;
+	overflow-x: hidden;
+	transition:opacity .6s ease, z-index .1s 1s linear;
+
+	&.wvc-io-content-active{
+		opacity: 1;
+		z-index: 999999;
+		
+		transition:opacity .6s ease, z-index 0s;
+	}
+
+	.wvc-row{
+
+	}
+}
+
+.wvc-io-item-content-close{
+	cursor: pointer;
+	display: block;
+	width: 40px;
+	height: 50px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 32px;
+	font-weight: 700;
+	color: #fff;
+	z-index: 99999;
+}
+
+@media screen and (max-width: 500px) {
+
+}
+
+.admin-bar{
+	.wvc-io-item-content{
+		top: 46px;
+	}
+}
+
+@media screen and (min-width: 782px) {
+	
+	.admin-bar{
+		.wvc-io-item-content{
+			top: 32px;
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.wvc-interactive-overlays{
+		font-size: 28px!important;
+	}
+
+	.wvc-interactive-overlays-container-display-inline-block .wvc-interactive-overlay-item {
+		margin: 0 14px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.wvc-interactive-overlays{
+		font-size: 32px!important;
+	}
+
+	.wvc-interactive-overlays-container-display-inline-block .wvc-interactive-overlay-item {
+		margin: 0 14px;
+	}
+}
