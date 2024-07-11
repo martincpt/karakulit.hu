@@ -67,3 +67,4 @@
 											   WHERE option_name='page_on_front'
 											   LIMIT 1))
 						 made by shutdown_action_hook, do_action('shutdown'), WP_Hook->do_action, WP_Hook->apply_filters, LiteSpeed\Core->send_headers, LiteSpeed\Tag->output, LiteSpeed\Tag::_finalize, LiteSpeed\Tag::_build_type_tags, is_front_page, WP_Query->is_front_page, get_option, apply_filters('pre_option_page_on_front'), WP_Hook->apply_filters, SitePress->pre_option_page_on_front, WPML_Pre_Option_Page->get
+[16-Mar-2024 15:09:13 UTC] WPMDB Find & Replace skipped: {"table":"wp_options","primary_key":"18285","column":"option_value","contains_match":false,"option_name":"wpml_notices"}
